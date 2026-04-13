@@ -1,0 +1,17 @@
+.header{
+    background-color: #f8fafa81;
+    backdrop-filter: blur(24px);
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #004275;
+}
+
+a:hover{
+    color: #004275;
+    border-bottom: #004275 2px solid;
+    font-weight: 600;
+    padding: 7px;
+}
+
