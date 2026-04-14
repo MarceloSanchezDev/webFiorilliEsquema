@@ -7,6 +7,7 @@ import QuienesSomos from "./components/QuienesSomos/QuienesSomos";
 import Preparados from "./components/Preparados/Preparados";
 import Product from "./components/Product/Product";
 import NotFound from "./components/NotFound/NotFound";
+import Recomendaciones from "./components/Recomendaciones/Recomendaciones";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/quienesSomos" element={<QuienesSomos></QuienesSomos>} />
         <Route path="/preparados" element={<Preparados></Preparados>} />
         <Route path="/product" element={<Product></Product>} />
+        <Route path="/FAQ" element={<Recomendaciones />}></Route>
       </Routes>
       <Footer></Footer>
     </main>
