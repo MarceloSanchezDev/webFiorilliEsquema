@@ -20,7 +20,7 @@
 }
 
 .btn-primary {
-  background: linear-gradient(to bottom right, #1b7f3f, #22a652);
+  background: linear-gradient(to bottom right, #1b7f3f, #22a652) !important;
   color: white;
 }
 

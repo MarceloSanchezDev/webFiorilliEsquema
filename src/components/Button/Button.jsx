@@ -1,4 +1,3 @@
-
 import "./Button.css";
 
 export default function Button({
@@ -14,4 +13,3 @@ export default function Button({
     </button>
   );
 }
-
