@@ -9,22 +9,22 @@
 
 .feature-card-light {
   background: #ffffff;
-  color: #191c1d;
+  color: #22a652;
 }
 
 .feature-card-primary {
-  background: #004275;
+  background: #6ed39a;
   color: #ffffff;
 }
 
 .feature-card-secondary {
-  background: #dce8ef;
+  background: #6ed39a;
   color: #163042;
 }
 
 .feature-card-soft {
   background: #e8eef1;
-  color: #191c1d;
+  color: #22a652;
 }
 
 .feature-card-icon {

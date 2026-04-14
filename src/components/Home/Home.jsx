@@ -299,23 +299,46 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="cta-section">
-        <div className="cta-box">
-          <div className="cta-content">
-            <h2>Comience su tratamiento personalizado hoy mismo.</h2>
-            <p>
-              Envíenos su receta médica a través de nuestro portal seguro y
-              reciba su preparado magistral en la comodidad de su hogar.
-            </p>
+      <section class="horarios-section">
+        <div class="horarios-overlay"></div>
 
-            <div className="cta-actions">
-              <Button variant="light">Enviar Receta</Button>
-              <Button variant="outline-light">Ver Catálogo</Button>
+        <div class="horarios-header">
+          <h2>NUESTROS HORARIOS</h2>
+        </div>
+
+        <div class="horarios-card">
+          <div class="horario-row">
+            <div class="horario-left">
+              <h3>LUNES A SÁBADOS</h3>
+              <span>MAÑANA</span>
+            </div>
+            <div class="horario-right">
+              <h3>9:00 a 13:00 Hs</h3>
             </div>
           </div>
 
-          <div className="cta-circle cta-circle-top"></div>
-          <div className="cta-circle cta-circle-bottom"></div>
+          <div class="horario-divider"></div>
+
+          <div class="horario-row">
+            <div class="horario-left">
+              <h3>LUNES A SÁBADOS</h3>
+              <span>TARDE</span>
+            </div>
+            <div class="horario-right">
+              <h3>16:30 a 20:00 Hs</h3>
+            </div>
+          </div>
+
+          <div class="horario-divider"></div>
+
+          <div class="horario-row horario-row-last">
+            <div class="horario-left">
+              <h3>DOMINGO</h3>
+            </div>
+            <div class="horario-right">
+              <h3>CERRADO</h3>
+            </div>
+          </div>
         </div>
       </section>
     </main>

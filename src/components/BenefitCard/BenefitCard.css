@@ -15,14 +15,15 @@
 .benefit-card-icon {
   display: block;
   font-size: 3rem;
-  color: #005a9c;
+  
+  color: #22a652;
   margin-bottom: 1.5rem;
 }
 
 .benefit-card-title {
   font-size: 1.6rem;
   font-weight: 700;
-  color: #004275;
+  color: #22a652;
   margin: 0 0 0.75rem 0;
 }
 

@@ -38,13 +38,13 @@
   font-size: 0.7rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: #004275;
+  color: #22a652;
 }
 
 .product-card-title {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #191c1d;
+  color: #1b7f3f;
   margin: 0 0 1rem 0;
 }
 
@@ -69,7 +69,7 @@
 
 .product-card-tag {
   background: #dce8ef;
-  color: #163042;
+  color: #1b7f3f;
   font-size: 0.65rem;
   padding: 0.28rem 0.6rem;
   border-radius: 999px;
@@ -90,7 +90,7 @@
 .product-card-details {
   font-size: 0.9rem;
   font-weight: 600;
-  color: #5f6b70;
+  color: #f57c00;
 }
 
 @media (max-width: 640px) {

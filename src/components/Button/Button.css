@@ -20,13 +20,13 @@
 }
 
 .btn-primary {
-  background: linear-gradient(to bottom right, #004275, #005a9c);
+  background: linear-gradient(to bottom right, #1b7f3f, #22a652);
   color: white;
 }
 
 .btn-secondary {
   background: #dce8ef;
-  color: #004275;
+  color: #22a652;
 }
 
 .btn-outline-light {
@@ -37,7 +37,7 @@
 
 .btn-light {
   background: white;
-  color: #004275;
+  color: #22a652;
 }
 
 .btn-outline-light {
@@ -48,10 +48,5 @@
 
 .btn-outline-light:hover {
   background: white;
-  color: #004275;
-}
-
-.btn-secondary {
-  background: #dce8ef;
-  color: #163042;
+  color: #22a652;
 }

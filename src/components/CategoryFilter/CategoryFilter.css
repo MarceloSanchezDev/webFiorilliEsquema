@@ -7,19 +7,19 @@
   border: none;
   border-radius: 0.85rem;
   background: transparent;
-  color: #5f6b70;
+  color: #6ed39a;
   cursor: pointer;
   transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
 }
 
 .category-filter:hover {
-  background: #eef3f5;
-  color: #191c1d;
+  background: #6ed39a;
+  color: #1a1d19;
 }
 
 .category-filter-active {
-  background: rgba(0, 66, 117, 0.1);
-  color: #004275;
+  background: rgba(27, 127, 64, 0.1);
+  color: #1b7f3f;
   font-weight: 700;
 }
 

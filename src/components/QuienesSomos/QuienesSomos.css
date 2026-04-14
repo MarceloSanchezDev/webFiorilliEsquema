@@ -28,7 +28,7 @@
   padding: 0.45rem 1rem;
   border-radius: 999px;
   background: #dce8ef;
-  color: #163042;
+  color: #22a652;
   font-size: 0.75rem;
   font-weight: 800;
   letter-spacing: 0.18em;
@@ -41,12 +41,12 @@
   font-weight: 800;
   line-height: 1.1;
   letter-spacing: -0.04em;
-  color: #004275;
+  color: #22a652;
   margin: 0 0 2rem 0;
 }
 
 .about-hero-title span {
-  color: #005a9c;
+  color: #1b8f3f;
   font-style: italic;
 }
 
@@ -105,7 +105,7 @@
 .about-quote-card strong {
   display: block;
   margin-top: 1rem;
-  color: #004275;
+  color: #22a652;
 }
 
 /* HISTORY */
@@ -170,7 +170,7 @@
 .lab-card-text h3 {
   font-size: 2rem;
   font-weight: 700;
-  color: #004275;
+  color: #22a652;
   margin: 0 0 1rem 0;
 }
 
@@ -190,7 +190,7 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  color: #005a9c;
+  color: #22a652;
   font-weight: 600;
   margin-bottom: 0.85rem;
 }
@@ -231,7 +231,7 @@
   position: relative;
   overflow: hidden;
   padding: 6rem 0;
-  background: #004275;
+  background: #22a652;
 }
 
 .about-cta-pattern {

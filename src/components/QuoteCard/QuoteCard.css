@@ -9,7 +9,7 @@
   font-size: 0.95rem;
   font-style: italic;
   line-height: 1.7;
-  color: #163042;
+  color: #1b7f3f;
 }
 
 .quote-card-footer {
@@ -23,7 +23,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #004275;
+  background: #5ed39a;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,7 +37,7 @@
 .quote-card-author {
   font-size: 0.75rem;
   font-weight: 800;
-  color: #004275;
+  color: #22a652;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }

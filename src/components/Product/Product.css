@@ -31,7 +31,7 @@
   display: inline-block;
   padding: 0.4rem 0.9rem;
   background: #dce8ef;
-  color: #163042;
+  color: #1b7f3f;
   border-radius: 999px;
   font-size: 0.75rem;
   font-weight: 800;
@@ -43,7 +43,7 @@
 .product-title {
   font-size: 3.7rem;
   font-weight: 800;
-  color: #004275;
+  color: #22a652;
   letter-spacing: -0.03em;
   line-height: 1.1;
   margin: 0 0 1.5rem 0;
@@ -124,7 +124,7 @@
 .product-section-title {
   font-size: 2.8rem;
   font-weight: 800;
-  color: #004275;
+  color: #22a652;
   letter-spacing: -0.03em;
   margin: 0 0 1.5rem 0;
 }
@@ -182,7 +182,7 @@
 .product-cta-box {
   position: relative;
   overflow: hidden;
-  background: #005a9c;
+  background: #22a652;
   border-radius: 3rem;
   padding: 3.5rem 2rem;
   text-align: center;
