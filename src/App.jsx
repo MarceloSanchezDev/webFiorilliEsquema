@@ -1,25 +1,27 @@
-import { useState } from 'react'
-import './App.css'
-import Header from './components/Header/Header'
-import Home from './components/Home/Home'
-import Footer from './components/Footer/Footer'
-import QuienesSomos from './components/QuienesSomos/QuienesSomos'
-import Preparados from './components/Preparados/Preparados'
-import Product from './components/Product/Product'
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Header from "./components/Header/Header";
+import Home from "./components/Home/Home";
+import Footer from "./components/Footer/Footer";
+import QuienesSomos from "./components/QuienesSomos/QuienesSomos";
+import Preparados from "./components/Preparados/Preparados";
+import Product from "./components/Product/Product";
+import NotFound from "./components/NotFound/NotFound";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <main>
       <Header></Header>
-      <Home></Home>
-      <QuienesSomos></QuienesSomos>
-      <Preparados></Preparados>
-      <Product></Product>
+      <Routes>
+        <Route path="*" element={<NotFound></NotFound>} />
+        <Route path="/" element={<Home></Home>} />
+        <Route path="/quienesSomos" element={<QuienesSomos></QuienesSomos>} />
+        <Route path="/preparados" element={<Preparados></Preparados>} />
+        <Route path="/product" element={<Product></Product>} />
+      </Routes>
       <Footer></Footer>
     </main>
-  )
+  );
 }
 
-export default App
+export default App;

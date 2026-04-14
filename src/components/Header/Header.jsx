@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Button from "../Button/Button";
 import "./Header.css";
 
@@ -41,7 +42,6 @@ export default function Header() {
             <div className="flex flex-col center width-100 gap-4">
               <div className="logo width-100 flex between alignCenter">
                 Farmacia JR Fiorilli
-
                 <span
                   className="material-symbols-outlined"
                   onClick={() => setShow(true)}
@@ -51,11 +51,10 @@ export default function Header() {
               </div>
 
               <div className="width-100 flex flex-col center gap-4">
-                <a href="#">Inicio</a>
-                <a href="#">Preparados</a>
-                <a href="#">Quiénes Somos</a>
-                <a href="#">FAQ</a>
-                <a href="#">Recomendaciones</a>
+                <Link to={"/"}>Inicio</Link>
+                <Link to={"/preparados"}>Preparados</Link>
+                <Link to={"/quienesSomos"}>Quiénes Somos</Link>
+                <Link to={"/FAQ"}>Recomendaciones</Link>
               </div>
 
               <div className="width-100 flex center">
@@ -72,21 +71,20 @@ export default function Header() {
     <header className="header width-100 fixed z-50">
       <nav className="padding-4">
         <div className="flex flex-row alignCenter between width-100 gap-4">
-          <div className="logo">
-            Farmacia JR Fiorilli
-          </div>
+          <div className="logo">Farmacia JR Fiorilli</div>
 
           <div className="flex alignCenter gap-4">
-            <a href="#">Inicio</a>
-            <a href="#">Preparados</a>
-            <a href="#">Quiénes Somos</a>
-            <a href="#">FAQ</a>
-            <a href="#">Recomendaciones</a>
+            <Link to={"/"}>Inicio</Link>
+            <Link to={"/preparados"}>Preparados</Link>
+            <Link to={"/quienesSomos"}>Quiénes Somos</Link>
+            <Link to={"/FAQ"}>Recomendaciones</Link>
           </div>
-
+          {/*
+        
           <div className="flex alignCenter">
             <Button variant="primary">Acceso Paciente</Button>
           </div>
+        */}
         </div>
       </nav>
     </header>
