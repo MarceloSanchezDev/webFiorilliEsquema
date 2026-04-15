@@ -15,3 +15,7 @@ a:hover{
     padding: 7px;
 }
 
+.logo-img{
+    width: 50px;
+    border-radius: 50%;
+}

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Button from "../Button/Button";
+import logo from "../../assets/logo.png";
 import "./Header.css";
 
 export default function Header() {
@@ -26,7 +26,8 @@ export default function Header() {
           <nav className="padding-4">
             <div className="flex center between width-100 gap-2">
               <div className="logo width-100 flex center">
-                Farmacia JR Fiorilli
+                <img src={logo} alt="logo" className="logo-img" /> Farmacia JR
+                Fiorilli
               </div>
 
               <span
@@ -40,8 +41,9 @@ export default function Header() {
         ) : (
           <nav className="padding-4">
             <div className="flex flex-col center width-100 gap-4">
-              <div className="logo width-100 flex between alignCenter">
-                Farmacia JR Fiorilli
+              <div className="logo flex center width-100 flex between alignCenter">
+                <img src={logo} alt="logo" className="logo-img" /> Farmacia JR
+                Fiorilli
                 <span
                   className="material-symbols-outlined"
                   onClick={() => setShow(true)}
@@ -56,10 +58,6 @@ export default function Header() {
                 <Link to={"/quienesSomos"}>Quiénes Somos</Link>
                 <Link to={"/FAQ"}>Recomendaciones</Link>
               </div>
-
-              <div className="width-100 flex center">
-                <Button variant="primary">Acceso Paciente</Button>
-              </div>
             </div>
           </nav>
         )}
@@ -71,7 +69,10 @@ export default function Header() {
     <header className="header width-100 fixed z-50">
       <nav className="padding-4">
         <div className="flex flex-row alignCenter between width-100 gap-4">
-          <div className="logo">Farmacia JR Fiorilli</div>
+          <div className="logo flex center gap-2">
+            <img src={logo} alt="logo" className="logo-img" /> Farmacia JR
+            Fiorilli
+          </div>
 
           <div className="flex alignCenter gap-4">
             <Link to={"/"}>Inicio</Link>

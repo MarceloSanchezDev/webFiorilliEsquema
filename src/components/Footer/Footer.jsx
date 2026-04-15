@@ -12,7 +12,7 @@ export default function Footer() {
               alt="Farmacia JR Fiorilli"
               className="logo-vertical"
             />
-            <h3>Farmacia JR Fiorilli</h3>
+            <h3>Farmacia Fiorilli JR</h3>
             <p>
               Especialistas en formulación magistral con más de 25 años de
               experiencia en la industria farmacéutica.
