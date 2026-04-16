@@ -8,10 +8,15 @@ export default function ProductCard({
   principles = [],
   details,
 }) {
+  console.log(`/${title.trim().replace(/\s+/g, "")}/${image}`);
   return (
     <article className="product-card">
       <div className="product-card-image-wrap">
-        <img className="product-card-image" src={image} alt={title} />
+        <img
+          className="product-card-image"
+          src={`/JPG/${title.trim().replace(/\s+/g, "")}/${image}`}
+          alt={title}
+        />
         <div className="product-card-badge">{category}</div>
       </div>
 

@@ -9,9 +9,9 @@ import imgHome6 from "../../assets/MEDIFE-IS.png";
 import imgHome7 from "../../assets/OOMINT-IS.png";
 import imgHome8 from "../../assets/PAMI-OS.png";
 import imgHome9 from "../../assets/OSDE-OS.png";
-
 import imgHome10 from "../../assets/PFA-OS.png";
-
+import imgHome11 from "../../assets/SANCOR-OS.png";
+import logo from "../../assets/logoVertical.png";
 import Button from "../Button/Button";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import InfoCard from "../InfoCard/InfoCard";
@@ -59,20 +59,20 @@ export default function Home() {
       <section className="value-section">
         <div className="container">
           <SectionTitle
-            title="El Valor de la Formulación"
-            subtitle="Un enfoque científico que pone al paciente en el centro de cada compuesto químico."
+            title="Nuestro Compromiso con tu Salud"
+            subtitle="En Farmacia JR Fiorilli combinamos atención personalizada, preparados magistrales de calidad y tecnología actualizada para brindar soluciones seguras, accesibles y pensadas para cada paciente."
           />
 
           <div className="bento-grid">
             <div className="bento-large">
               <InfoCard
                 icon="verified"
-                title="Calidad Certificada"
-                text="Utilizamos principios activos de grado farmacéutico con trazabilidad completa y estrictos protocolos de laboratorio."
+                title="Calidad y Seguridad"
+                text="Elaboramos preparados magistrales con materias primas certificadas, procesos controlados y los más altos estándares de seguridad farmacéutica."
               >
                 <div className="tag-group">
-                  <span className="tag">ISO 9001</span>
-                  <span className="tag">GMP Compliance</span>
+                  <span className="tag">Materias primas certificadas</span>
+                  <span className="tag">Procesos controlados</span>
                 </div>
               </InfoCard>
             </div>
@@ -80,21 +80,24 @@ export default function Home() {
             <div className="bento-small">
               <InfoCard
                 icon="biotech"
-                title="Dosificación Personalizada"
-                text="Ajustamos milimétricamente la concentración para maximizar la eficacia y minimizar efectos secundarios."
+                title="Preparados Personalizados"
+                text="Desarrollamos fórmulas individualizadas, adaptadas a las necesidades específicas de cada paciente, con precisión, responsabilidad y seguimiento profesional."
                 variant="secondary"
               >
                 <div className="precision-bar">
                   <div className="precision-fill"></div>
                 </div>
-                <p className="precision-text">Precisión del 99.9%</p>
+                <p className="precision-text">
+                  Atención centrada en cada paciente
+                </p>
               </InfoCard>
             </div>
 
             <div className="bento-small">
               <InfoCard
-                title="Asesoría Experta"
-                text="Farmacéuticos especializados disponibles para resolver sus dudas."
+                icon="support_agent"
+                title="Atención Cercana"
+                text="Brindamos asesoramiento profesional, atención personalizada y acompañamiento en cada etapa del tratamiento."
                 variant="primary"
               >
                 <Button variant="light">Consultar</Button>
@@ -104,18 +107,17 @@ export default function Home() {
             <div className="bento-large image-card">
               <div className="image-card-content">
                 <div className="image-card-text">
-                  <h3>Tecnología de Vanguardia</h3>
+                  <h3>Tecnología y Formación Continua</h3>
                   <p>
-                    Inversión constante en equipamiento analítico para
-                    garantizar la estabilidad de sus fórmulas.
+                    Trabajamos con tecnología actualizada y un equipo en
+                    constante capacitación, fortaleciendo nuestro rol como
+                    farmacia moderna y farmacia escuela al servicio de la
+                    comunidad.
                   </p>
                 </div>
 
                 <div className="image-card-media">
-                  <img
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzWoydXW29opP2t5mSjvaaZbzPZGbyJrhG4xPBegQllQS0e_4grZGmRwyB3K2fyfwcGVJJdbYXqnZmT9K-BQsEWmUNmbIIeygO0oWc_lk_CYiDvSwc1OEULV3J7W76Iw2XrTcvrTzMzPiMlOKJhl2LR1XYTi64-D_QwJEM1Yec1i8Q1vbg-6dfUn2pcxQ9NswzEfmoeiWJE24IwSlhT5EuKNMhJ9Z4rk29swJoE_At6cf1sn0uzHlX9mpoqguYu5J2J8XDBHg2Xlzf"
-                    alt="Tecnología farmacéutica"
-                  />
+                  <img src={logo} alt="Tecnología farmacéutica" />
                 </div>
               </div>
             </div>
@@ -173,6 +175,15 @@ export default function Home() {
               <img
                 className="process-image"
                 src={imgHome4}
+                alt="Preparado farmacéutico"
+              />
+            </div>
+          </div>
+          <div className="process-image-side">
+            <div className="process-image-wrap">
+              <img
+                className="process-image"
+                src={imgHome11}
                 alt="Preparado farmacéutico"
               />
             </div>

@@ -4,6 +4,7 @@ import BenefitCard from "../BenefitCard/BeneficCard";
 import IngredientCard from "../IngredientCard/IngredientCard";
 import QuoteCard from "../QuoteCard/QuoteCard";
 import "./Product.css";
+import RecomendacionesAside from "../RecomendacionesAside/RecomendacionesAside";
 
 const benefits = [
   {
@@ -66,6 +67,7 @@ const steps = [
 export default function Product() {
   return (
     <main className="product-main">
+      <RecomendacionesAside />
       <section className="product-hero-section">
         <div className="container product-hero-grid">
           <div className="product-hero-content">
