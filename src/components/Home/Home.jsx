@@ -11,7 +11,7 @@ import imgHome8 from "../../assets/PAMI-OS.png";
 import imgHome9 from "../../assets/OSDE-OS.png";
 import imgHome10 from "../../assets/PFA-OS.png";
 import imgHome11 from "../../assets/SANCOR-OS.png";
-import logo from "../../assets/logoVertical.png";
+import logo from "../../assets/LogoVertical.png";
 import Button from "../Button/Button";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import InfoCard from "../InfoCard/InfoCard";
