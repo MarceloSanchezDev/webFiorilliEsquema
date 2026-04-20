@@ -8,6 +8,7 @@ import Preparados from "./components/Preparados/Preparados";
 import Product from "./components/Product/Product";
 import NotFound from "./components/NotFound/NotFound";
 import Recomendaciones from "./components/Recomendaciones/Recomendaciones";
+import BotonesChat from "./components/BotonesChat/BotonesChat";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/product" element={<Product></Product>} />
         <Route path="/FAQ" element={<Recomendaciones />}></Route>
       </Routes>
+      <BotonesChat></BotonesChat>
       <Footer></Footer>
     </main>
   );
