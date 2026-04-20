@@ -2,15 +2,9 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 import CategoryFilter from "../CategoryFilter/CategoryFIlter";
 import ProductCard from "../ProductCard/ProductCard";
 import ProcessStepCard from "../ProcessStepCard/ProcessStepCard";
-import Button from "../Button/Button";
 import "./Preparados.css";
+import { useState } from "react";
 
-const categories = [
-  { label: "Dermatología", active: true },
-  { label: "Pediatría" },
-  { label: "Suplementos" },
-  { label: "Veterinaria" },
-];
 const products = [
   {
     categoria: "Skin Care",
@@ -561,42 +555,7 @@ Preparado únicamente para uso externo. `,
     ],
   },
 ];
-/* 
-const products = [
-  {
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBJ-GY6pe89-3qsUBBp8GSjXxGNgACtQN4lWcUc44vh8qB16FJjviwGzP_vo57Q0B2Cj2csDzJwNrIFC8FYS_6nMl_CWItK3sz7kwtLI51Y_e7sxQuHGgGcWpGGl_Erej1uw9YihEcpYWP4_wTQu6431TyZZNHQIyC1EHtGmrKmXaptc8IGmHjg8nzPFxe-RkEe0D4xrZW80wMz1Z-4Fp5UslJ5CWHE9aksoziyKsomDokRa8vsP581XnZUbE6iT0A4Y2rbaYds5jAj",
-    category: "Dermatología",
-    title: "Crema Hidratante con Urea 10%",
-    principles: ["UREA", "VITAMINA E"],
-    details: "250g | Frasco Airless",
-  },
-  {
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBrfwKX58FV6nLzt52tjgeJP3-Sy6JV9fLHhVeCGJ8Ts85Psx0TwzqW5n5VnZxphbUMKPj8RVZnMUtOrz7YY1MLkTUScNcCUn2xp2D6SPhu1MiAekgf2PTX3YUB9yOe-QxlCjZ0HBNSKOwOvndwbBd1FlAQn4_XvW6cd4Qm-KlmlmMPpMg_EXKOUZMeHaha0BwDVxSVr939JvywuAVafu-xUACG4bgd5NUjQ7S6C2QNuErGS3qX0IKpFlk7p6EFE2ISpMS0ewiztik9",
-    category: "Pediatría",
-    title: "Jarabe Pediátrico Personalizado",
-    principles: ["MAGNESIO", "BASE SIN AZÚCAR"],
-    details: "150ml | Suspensión Oral",
-  },
-  {
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAzZb_lNMUYo2dSbRtX0GGoS0IdDLZwXmDaC0s_-EzehjLKK8ga-TNYK5xfO_l1fq1ygxuHCOW6okjjkYF7gtvIuhZ27K9g8SvKsR8LO9I5RFJhvucpIDby4XGR-aBt1ho_cmpHLOzfRGra4N8aRZDlo1UcuA1yMSvULwUL0X9S7SLc57pVYL-yCztzmMs1ENRGMqpDoFs_nx0iDPno2bji6_0K-gih2FhpE-DcGq8UY8E42NUpAb2oyqA6zP3TqjoAYXO-3EL99xre",
-    category: "Suplementos",
-    title: "Complejo Vitamínico Quelado",
-    principles: ["ZINC", "VIT D3"],
-    details: "60 Cápsulas | Frasco PET",
-  },
-  {
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCCDXPcCiGkQhr8ogCaTqQUCbfOdjxt14Iq0TsUXFg1RL8C5sf8Vbskz3DRrO-7Tv-FJRfOUuj4DQIYr4NmsI_hywm8ByKFlCQYhqzKDQu23VBbnoJ0yqP2kj5OZ8wC1UwbDvQiOhraxXUj5iOmfJ67O8R98udNCnlcXU9eSKrnWeaB7FzQTDHohsmvxCeZ24mkXaUwSq3_9HgAkGKvXBeulgZQEiGe3HsY-H0MdtVJoiDZu2ZSMFmVVklkkMuDHXn8AwHjIBwZCkID",
-    category: "Dermatología",
-    title: "Gel Liposomado con Ácido Hialurónico",
-    principles: ["HIALURÓNICO", "ALOE VERA"],
-    details: "50ml | Tubo Aluminio",
-  },
-];
-*/
+
 const processSteps = [
   {
     icon: "prescriptions",
@@ -621,6 +580,16 @@ const processSteps = [
 ];
 
 export default function Preparados() {
+  const [filter, setFilter] = useState("");
+  const [categories, setCategories] = useState([
+    { label: "Skin Care", active: true },
+    { label: "Medicamentos de uso topico", active: false },
+    { label: "Productos de origen natural", active: false },
+    { label: "Suplementos", active: false },
+  ]);
+  const filteredProducts = products.filter(
+    (product) => !filter || product.categoria === filter,
+  );
   return (
     <main className="preparados-main">
       <section className="preparados-hero-section">
@@ -657,6 +626,15 @@ export default function Preparados() {
                     key={category.label}
                     label={category.label}
                     active={category.active}
+                    onClick={() => {
+                      setFilter(category.label);
+                      setCategories((prev) =>
+                        prev.map((cat) => ({
+                          ...cat,
+                          active: cat.label === category.label,
+                        })),
+                      );
+                    }}
                   />
                 ))}
               </div>
@@ -679,21 +657,24 @@ export default function Preparados() {
               </button>
             </div>
           </aside>
-
-          <div className="preparados-products">
-            <div className="preparados-products-grid">
-              {products.map((product, index) => (
-                <ProductCard
-                  key={index}
-                  image={product.img[0]}
-                  category={product.categoria}
-                  title={product.nombre}
-                  principles={product.beneficios}
-                  details={product.details}
-                />
-              ))}
+          {filteredProducts.length > 0 ? (
+            <div className="preparados-products">
+              <div className="preparados-products-grid">
+                {filteredProducts.map((product, index) => (
+                  <ProductCard
+                    key={index}
+                    image={product.img[0]}
+                    category={product.categoria}
+                    title={product.nombre}
+                    principles={product.beneficios}
+                    details={product.details}
+                  />
+                ))}
+              </div>
             </div>
-          </div>
+          ) : (
+            <p>No hay productos disponibles en esta categoría</p>
+          )}
         </div>
       </section>
 

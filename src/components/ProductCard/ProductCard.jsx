@@ -8,7 +8,6 @@ export default function ProductCard({
   principles = [],
   details,
 }) {
-  console.log(`/${title.trim().replace(/\s+/g, "")}/${image}`);
   return (
     <article className="product-card">
       <div className="product-card-image-wrap">
