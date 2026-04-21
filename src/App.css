@@ -108,7 +108,9 @@
 .width-25 {
   width: 25%;
 }
-
+.hidden{
+  overflow: hidden;
+}
 /* HEIGHT */
 .height-100 {
   height: 100%;
@@ -221,7 +223,6 @@
   .height-md-100 {
     height: 100%;
   }
-
   /* GAP */
   .gap-md-1 {
     gap: 0.25rem;
