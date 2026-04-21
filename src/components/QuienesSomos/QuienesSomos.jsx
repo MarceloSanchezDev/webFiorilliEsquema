@@ -59,8 +59,8 @@ export default function QuienesSomos() {
 
             <div className="about-quote-card">
               <p>
-                "La personalización no es una opción, es nuestro compromiso con
-                tu salud."
+                " En Farmacia Fiorilli Jr ofrecemos una atención de alta calidad
+                con los mejores precios"
               </p>
               <strong>— DT. Monica Beatriz Fiorilli, Fundadora</strong>
             </div>

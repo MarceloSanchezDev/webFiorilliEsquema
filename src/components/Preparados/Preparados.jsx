@@ -2,6 +2,7 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 import CategoryFilter from "../CategoryFilter/CategoryFIlter";
 import ProductCard from "../ProductCard/ProductCard";
 import ProcessStepCard from "../ProcessStepCard/ProcessStepCard";
+import imgPreparados from "../../assets/imagen-faq.png";
 import "./Preparados.css";
 import { useState } from "react";
 
@@ -20,6 +21,7 @@ const products = [
       "Hidratar y suaviza la  piel. ",
       "Es el primer paso de la rutina “skin care”  , preparando tu piel para màs cuidados.",
     ],
+    receta: false,
   },
   {
     categoria: "Skin Care",
@@ -35,6 +37,7 @@ const products = [
       "	Prevención del envejecimiento y deterioro .",
       "	Brinda firmeza, brillo  y elasticidad ",
     ],
+    receta: false,
   },
   {
     categoria: "Skin Care",
@@ -50,6 +53,7 @@ const products = [
       "Reduce las cicatrices y las manchas de la piel.",
       "Protege la piel del deterioro y desgaste.",
     ],
+    receta: false,
   },
   {
     categoria: "Skin Care",
@@ -64,6 +68,7 @@ const products = [
       "Evita la aparición de grietas y callos en los talones ",
       "Proporciona sensación de frescura, descanso y bienestar, reduciendo la incomodidad al caminar",
     ],
+    receta: false,
   },
   {
     categoria: "Skin Care",
@@ -78,6 +83,7 @@ const products = [
       "Ayuda a facilitar la aplicación del maquillaje ",
       "Ayuda a hidratar la piel y nutrirla ",
     ],
+    receta: false,
   },
   {
     categoria: "Skin Care",
@@ -92,6 +98,7 @@ const products = [
       "Hidrata y suaviza la piel ",
       "Apta para aplicación sobre  pieles sensibles  ",
     ],
+    receta: false,
   },
   {
     categoria: "Skin Care",
@@ -107,6 +114,7 @@ const products = [
       "Mejora la apariencia de la piel, aportando elasticidad y previniendo la resequedad y el envejecimiento prematuro.",
       "Es una crema de rápida absorción y fácil aplicación ",
     ],
+    receta: false,
   },
   {
     categoria: "Skin Care",
@@ -121,6 +129,7 @@ const products = [
       "Ayuda a conseguir una piel mas suave y rejuvenecida ",
       "Estimula la producción natural de colágeno de la piel ",
     ],
+    receta: false,
   },
   {
     categoria: "Skin Care",
@@ -137,6 +146,7 @@ const products = [
       "Ayuda a rejuvenecer la piel y reducir el deterioro de la misma  ",
       "Es de rápida y fácil aplicación ",
     ],
+    receta: false,
   },
   {
     categoria: "Skin Care",
@@ -151,6 +161,7 @@ const products = [
       "Hidrata y suaviza la piel mejorando el aspecto  ",
       "Brinda una mayor elasticidad y firmeza de la piel  ",
     ],
+    receta: false,
   },
 
   {
@@ -167,6 +178,7 @@ Preparado únicamente para uso externo. `,
       "Reduce eficazmente el enrojecimiento, descamación y el picor (picazón).",
       "Es de fácil y rápida aplicación ",
     ],
+    receta: false,
   },
   {
     categoria: "Medicamentos de uso topico",
@@ -182,6 +194,7 @@ Preparado únicamente para uso externo. `,
       "Ayuda a mejorar la movilidad y reducir la rigidez en articulaciones (rodillas, manos, tobillos) afectadas por osteoartritis.",
       "Fácil Aplicación y rápida acción ",
     ],
+    receta: false,
   },
   {
     categoria: "Medicamentos de uso topico",
@@ -197,6 +210,7 @@ Preparado únicamente para uso externo. `,
       "Elimina bacterias que infectan heridas menores, eccemas o dermatitis",
       "Útil para el tratamiento de heridas leves y superficiales de la piel.",
     ],
+    receta: true,
   },
   {
     categoria: "Medicamentos de uso topico",
@@ -213,6 +227,7 @@ Preparado únicamente para uso externo. `,
       "Apto para pieles sensibles",
       "Es un desinfectante de piel de amplio espectro ",
     ],
+    receta: false,
   },
 
   {
@@ -229,6 +244,7 @@ Preparado únicamente para uso externo. `,
       "Se aplica solo una vez al día, preferentemente por la noche, preferiblemente sobre la uña limpia y lijada.",
       "Penetra en la uña para atacar el hongo, promoviendo el crecimiento de una uña sana.",
     ],
+    receta: false,
   },
   {
     categoria: "Productos de origen natural",
@@ -244,6 +260,7 @@ Preparado únicamente para uso externo. `,
       "Sus componentes ayudan a mejorar el funcionamiento general del hígado y la vesícula biliar.",
       "Gracias a su combinación de extractos vegetales, acelera el proceso digestivo para que los alimentos no resulten pesados.",
     ],
+    receta: false,
   },
   {
     categoria: "Productos de origen natural",
@@ -259,6 +276,7 @@ Preparado únicamente para uso externo. `,
       "Ayudan a fortalecer las defensas  del  cuerpo ",
       "Facilita la producción de bilis y enzimas digestivas, lo que reduce la pesadez, la hinchazón y las digestiones lentas.",
     ],
+    receta: false,
   },
   {
     categoria: "Productos de origen natural",
@@ -276,6 +294,7 @@ Preparado únicamente para uso externo. `,
       "Reducen la viscosidad de la sangre, permitiendo un mejor flujo en lasn extremidades, mejorando el Flujo Sanguíneo.",
       "Tienen propiedades que reducen la hinchazón y la inflamatoria",
     ],
+    receta: false,
   },
   {
     categoria: "Productos de origen natural",
@@ -291,6 +310,7 @@ Preparado únicamente para uso externo. `,
       "Por su composición 100 % de origen natural ofrecen una alternativa con menos efectos secundarios.",
       "Sus componentes naturales ayudan a aliviar la tensión física asociada al estrés promoviendo la relajación muscular  durante el descanso.",
     ],
+    receta: false,
   },
   {
     categoria: "Productos de origen natural",
@@ -307,6 +327,7 @@ Preparado únicamente para uso externo. `,
       "Ayudan a disminuir la intensidad y duración de enfermedades, siendo útiles en épocas de estrés, fatiga o cambios estacionales.",
       "Facilitan una respuesta inmunológica más equilibrada, especialmente en niños con problemas respiratorios crónicos o personas con defensas bajas",
     ],
+    receta: false,
   },
   {
     categoria: "Productos de origen natural",
@@ -323,6 +344,7 @@ Preparado únicamente para uso externo. `,
       "Ayudan a mejorar la función intestinal y la evacuación.",
       "Ayudan a reducir la inflamación abdominal y pesadez y mejorando la digestión ",
     ],
+    receta: false,
   },
   {
     categoria: "Productos de origen natural",
@@ -338,6 +360,7 @@ Preparado únicamente para uso externo. `,
       "Se aplica solo una vez al día, preferentemente por la noche, preferiblemente sobre la uña limpia y lijada.",
       "Penetra en la uña para atacar el hongo, promoviendo el crecimiento de una uña sana.",
     ],
+    receta: false,
   },
   {
     categoria: "Productos de origen natural",
@@ -353,6 +376,7 @@ Preparado únicamente para uso externo. `,
       "Se aplica solo una vez al día, preferentemente por la noche, preferiblemente sobre la uña limpia y lijada.",
       "Penetra en la uña para atacar el hongo, promoviendo el crecimiento de una uña sana.",
     ],
+    receta: false,
   },
   {
     categoria: "Productos de origen natural",
@@ -368,6 +392,7 @@ Preparado únicamente para uso externo. `,
       "Regeneración de tejidos  desgastados.",
       "Mejora de la circulación sanguínea .",
     ],
+    receta: false,
   },
   {
     categoria: "Productos de origen natural",
@@ -382,6 +407,7 @@ Preparado únicamente para uso externo. `,
       "Descongestiva: Facilita la respiración en casos de resfriados, gripes o bronquitis.",
       "Alivio de la Tos: Actúa como antitusivo natural para disminuir la tos constante",
     ],
+    receta: false,
   },
   {
     categoria: "Productos de origen natural",
@@ -397,6 +423,7 @@ Preparado únicamente para uso externo. `,
       "Acción antiinflamatoria y diurética",
       "Regula el ritmo cardíaco, actúa como sedante ligero y mejora la oxigenación muscular.",
     ],
+    receta: false,
   },
   {
     categoria: "Productos de origen natural",
@@ -412,6 +439,7 @@ Preparado únicamente para uso externo. `,
       "Ayuda a reducir la Acidez y Náuseas",
       "ayudan a proteger y estimular el buen funcionamiento del hígado.",
     ],
+    receta: false,
   },
   {
     categoria: "Productos de origen natural",
@@ -427,6 +455,7 @@ Preparado únicamente para uso externo. `,
       "Acción Antiinflamatoria y alivio de la irritación intestinal causada por el esfuerzo.",
       "Ayudan a regular el transito estomacal ",
     ],
+    receta: false,
   },
   {
     categoria: "Productos de origen natural",
@@ -436,6 +465,7 @@ Preparado únicamente para uso externo. `,
     uso: ` `,
     recomendaciones: ``,
     beneficios: [""],
+    receta: false,
   },
   {
     categoria: "Suplementos",
@@ -451,6 +481,7 @@ Preparado únicamente para uso externo. `,
       "Tiene propiedades antiinflamatorias   e inmunoestimulantes ",
       "Mejora la fuerza muscular, la resistencia y el rendimiento mental o cognitivo.",
     ],
+    receta: false,
   },
   {
     categoria: "Suplementos",
@@ -467,6 +498,7 @@ Preparado únicamente para uso externo. `,
       "Tienen un efecto antioxidante e inmunoestimulante",
       "Ayudan al bienestar cardiovascular y cerebral ",
     ],
+    receta: false,
   },
   {
     categoria: "Suplementos",
@@ -481,6 +513,7 @@ Preparado únicamente para uso externo. `,
       "Ayuda a mejorar el descanso profundo y a calmar la ansiedad ",
       "Contribuye a la fijación de calcio en huesos y ayuda a regular la presión arterial.",
     ],
+    receta: false,
   },
   {
     categoria: "Suplementos",
@@ -495,6 +528,7 @@ Preparado únicamente para uso externo. `,
       "Contribuye a regular la presión arterial y mantener un ritmo cardíaco saludable",
       "Favorece un descanso reparador y profundo, disminuyendo insomnio , la ansiedad y el  estrés",
     ],
+    receta: false,
   },
   {
     categoria: "Suplementos",
@@ -510,6 +544,7 @@ Preparado únicamente para uso externo. `,
       "Ayuda a la protección y regeneración del cartílago y huesos ",
       "Ayuda a disminuir la inflamación en enfermedades como la artritis reumatoide y la artrosis.",
     ],
+    receta: false,
   },
   {
     categoria: "Suplementos",
@@ -525,6 +560,7 @@ Preparado únicamente para uso externo. `,
       "Tiene propiedades antiinflamatorias  ",
       "Ayuda a reducir el estrés, la ansiedad y los síntomas depresivos mediante la regulación de neurotransmisores",
     ],
+    receta: false,
   },
   {
     categoria: "Suplementos",
@@ -539,6 +575,7 @@ Preparado únicamente para uso externo. `,
       "Tienen un efecto antioxidante que previene del deterioro celular",
       "Es esencial para la reparación de tejidos, curación de heridas y el mantenimiento de huesos y dientes.",
     ],
+    receta: false,
   },
   {
     categoria: "Suplementos",
@@ -553,6 +590,7 @@ Preparado únicamente para uso externo. `,
       "Mejora la función cognitiva y la concentración",
       "Favorece el bienestar físico y el crecimiento muscular post entrenamiento ",
     ],
+    receta: false,
   },
 ];
 
@@ -560,7 +598,7 @@ const processSteps = [
   {
     icon: "prescriptions",
     title: "1. Receta",
-    text: "Suba su receta médica original para validación farmacéutica.",
+    text: "Recibimos su receta médica original.",
   },
   {
     icon: "request_quote",
@@ -573,9 +611,9 @@ const processSteps = [
     text: "Nuestros especialistas preparan su fórmula en el laboratorio.",
   },
   {
-    icon: "local_shipping",
+    icon: "hand_package",
     title: "4. Entrega",
-    text: "Reciba su preparado magistral en su domicilio con total seguridad.",
+    text: "Reciba su preparado magistral en la farmacia con total seguridad.",
   },
 ];
 
@@ -605,10 +643,7 @@ export default function Preparados() {
           </div>
 
           <div className="preparados-hero-media">
-            <img
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkaCCg-8TevhCkuti9j1ctqF2r7FxTFlvNQg_RqgvBIz-j--sJgxlMUqkTGzdwtL_ZflgpAKbGyyF9NpvkFYAQNXGHX4pdJR8-1vS1vGrN1C-pDPbdfSG7fRcnUEoHumC70EHt_MzlxOgr3NAmLs21KT3oJIexjM54n5PM0UYrSw-9SZ1T85QWcsZuvFIaxLSQq3lOO_zHGMs_R36Uqg30KCRMI2YkpbB-xGq1v3W8sUO656mJLhNNLDkQx-TphamTnCfYcuw1UBNv"
-              alt="Laboratorio farmacéutico"
-            />
+            <img src={imgPreparados} alt="Laboratorio farmacéutico" />
             <div className="preparados-hero-overlay"></div>
           </div>
         </div>
@@ -668,6 +703,7 @@ export default function Preparados() {
                     title={product.nombre}
                     principles={product.beneficios}
                     details={product.details}
+                    receta={product.receta}
                   />
                 ))}
               </div>
@@ -680,7 +716,10 @@ export default function Preparados() {
 
       <section className="preparados-process-section">
         <div className="container preparados-process-box">
-          <SectionTitle title="Proceso de Elaboración Magistral" subtitle="" />
+          <SectionTitle
+            title="Proceso de Elaboración de un Preparado Magistral"
+            subtitle=""
+          />
 
           <span className="preparados-process-label">Metodología Precisa</span>
 

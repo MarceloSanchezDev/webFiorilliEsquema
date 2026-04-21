@@ -7,6 +7,7 @@ export default function ProductCard({
   title,
   principles = [],
   details,
+  receta,
 }) {
   return (
     <article className="product-card">
@@ -34,7 +35,11 @@ export default function ProductCard({
       </div>
 
       <div className="product-card-footer">
-        <span className="product-card-details">{details}</span>
+        {receta ? (
+          <span className="product-card-details">Venta Bajo Receta</span>
+        ) : (
+          <span className="product-card-details">Venta Libre</span>
+        )}
         <Button variant="primary">Ver Detalles</Button>
       </div>
     </article>

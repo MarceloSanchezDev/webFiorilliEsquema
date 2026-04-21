@@ -30,14 +30,14 @@
   position: absolute;
   top: 1rem;
   right: 1rem;
-  background: rgba(255, 255, 255, 0.92);
+  background: #22a652 ;
   backdrop-filter: blur(8px);
   padding: 0.35rem 0.8rem;
   border-radius: 999px;
   font-size: 0.7rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: #22a652;
+  color: rgba(255, 255, 255, 0.92);
 }
 
 .product-card-title {
