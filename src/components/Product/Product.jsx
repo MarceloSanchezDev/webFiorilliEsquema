@@ -682,18 +682,6 @@ export default function Product() {
                 <h1 className="product-title">{producto.nombre}</h1>
 
                 <p className="product-description">{producto.compo}</p>
-
-                <div className="product-hero-actions">
-                  <Button variant="primary">
-                    {producto.receta
-                      ? "Requiere receta médica"
-                      : "Añadir a mi tratamiento"}
-                  </Button>
-
-                  <Button variant="secondary" icon="chat">
-                    Hablar con un Farmacéutico
-                  </Button>
-                </div>
               </div>
 
               <div className="product-hero-media">
