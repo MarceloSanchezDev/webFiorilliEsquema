@@ -670,8 +670,8 @@ export default function Product() {
 
   return (
     <main className="product-main">
-      <div className="flex ">
-        <div className="width-75">
+      <div className="flex flex-col flex-md-row width-100">
+        <div className="width-100 width-md-75 ">
           <section className="product-hero-section">
             <div className="container product-hero-grid">
               <div className="product-hero-content">

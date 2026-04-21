@@ -3,10 +3,10 @@ import RecomendacionesCard from "./RecomendacionesCard";
 
 export default function RecomendacionesAside({ productosR }) {
   return (
-    <aside className="recommendations-aside">
+    <aside className="recommendations-aside ">
       <div className="recommendations-aside-sticky">
         <h3 className="recommendations-aside-title">Recomendaciones para ti</h3>
-        <div className="recommendations-aside-list">
+        <div className="recommendations-aside-list flex flex-md-col gap-3">
           {productosR.map((item) => (
             <RecomendacionesCard
               key={item.nombre}

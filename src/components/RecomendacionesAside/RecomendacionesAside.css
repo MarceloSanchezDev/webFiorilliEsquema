@@ -27,11 +27,7 @@
 }
 
 /* LISTA */
-.recommendations-aside-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
+
 
 /* ========================= */
 /* 📱 TABLET */
