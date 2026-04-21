@@ -4,7 +4,7 @@ import ProductCard from "../ProductCard/ProductCard";
 import ProcessStepCard from "../ProcessStepCard/ProcessStepCard";
 import imgPreparados from "../../assets/imagen-faq.png";
 import "./Preparados.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const products = [
   {
@@ -633,6 +633,12 @@ export default function Preparados() {
   const filteredProducts = products.filter(
     (product) => !filter || product.categoria === filter,
   );
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <main className="preparados-main">
       <section className="preparados-hero-section">
