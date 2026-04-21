@@ -1,5 +1,6 @@
 import "./FAQSection.css";
 import FAQItem from "./FAQItem";
+import Videos from "../Video/Videos";
 
 export default function FAQSection() {
   const faqData = [
@@ -193,11 +194,14 @@ También se preparan productos como champús, lociones, tónicos,
   ];
 
   return (
-    <section className="faq-section">
-      <div className="faq-container">
+    <section className="faq-section flex flex-md-row flex-col alignStart justifyCenter">
+      <div className="faq-container width-100 flex flex-col gap-2 padding-1">
         {faqData.map((item, index) => (
           <FAQItem key={index} question={item.question} answer={item.answer} />
         ))}
+      </div>
+      <div className="flex center width-100 height-100 sticky top-100 padding-1">
+        <Videos video={"/filosofia.mp4"}></Videos>
       </div>
     </section>
   );

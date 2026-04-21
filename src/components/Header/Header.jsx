@@ -26,8 +26,8 @@ export default function Header() {
           <nav className="padding-4">
             <div className="flex center between width-100 gap-2">
               <div className="logo width-100 flex center">
-                <img src={logo} alt="logo" className="logo-img" /> Farmacia JR
-                Fiorilli
+                <img src={logo} alt="logo" className="logo-img" /> Farmacia
+                Fiorilli JR
               </div>
 
               <span
@@ -42,8 +42,8 @@ export default function Header() {
           <nav className="padding-4">
             <div className="flex flex-col center width-100 gap-4">
               <div className="logo flex center width-100 flex between alignCenter">
-                <img src={logo} alt="logo" className="logo-img" /> Farmacia JR
-                Fiorilli
+                <img src={logo} alt="logo" className="logo-img" /> Farmacia
+                Fiorilli JR
                 <span
                   className="material-symbols-outlined"
                   onClick={() => setShow(true)}
@@ -70,8 +70,8 @@ export default function Header() {
       <nav className="padding-4">
         <div className="flex flex-row alignCenter between width-100 gap-4">
           <div className="logo flex center gap-2">
-            <img src={logo} alt="logo" className="logo-img" /> Farmacia JR
-            Fiorilli
+            <img src={logo} alt="logo" className="logo-img" /> Farmacia Fiorilli
+            JR
           </div>
 
           <div className="flex alignCenter gap-4">

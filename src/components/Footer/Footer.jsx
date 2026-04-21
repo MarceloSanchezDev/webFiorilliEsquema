@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="footer-brand">
             <img
               src={logoVertical}
-              alt="Farmacia JR Fiorilli"
+              alt="Farmacia Fiorilli JR"
               className="logo-vertical"
             />
             <h3>Farmacia Fiorilli JR</h3>
@@ -120,7 +120,7 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <small>
-            © Copyright 2026 Farmacia JR Fiorilli - Todos los derechos
+            © Copyright 2026 Farmacia Fiorilli JR - Todos los derechos
             reservados
           </small>
           <small>

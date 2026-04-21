@@ -3,6 +3,7 @@ import CategoryFilter from "../CategoryFilter/CategoryFIlter";
 import ProductCard from "../ProductCard/ProductCard";
 import ProcessStepCard from "../ProcessStepCard/ProcessStepCard";
 import imgPreparados from "../../assets/imagen-faq.png";
+import Videos from "../Video/Videos";
 import "./Preparados.css";
 import { useEffect, useState } from "react";
 
@@ -685,22 +686,8 @@ export default function Preparados() {
                 ))}
               </div>
             </div>
-
-            <div className="preparados-advice-card">
-              <span className="material-symbols-outlined preparados-advice-icon">
-                medical_services
-              </span>
-
-              <h4>Asesoría Farmacéutica</h4>
-
-              <p>
-                ¿No encuentra lo que busca? Nuestros farmacéuticos pueden
-                ayudarle.
-              </p>
-
-              <button type="button" className="preparados-advice-link">
-                Consultar ahora
-              </button>
+            <div className="width-100 flex center">
+              <Videos video={"/filosofia.mp4"}></Videos>
             </div>
           </aside>
           {filteredProducts.length > 0 ? (

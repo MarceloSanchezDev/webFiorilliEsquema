@@ -89,7 +89,7 @@ export default function QuienesSomos() {
                 </span>
                 <div>
                   <p className="feature-card-text">
-                    La <em>Farmacia JR Fiorilli</em> fue fundada el lunes 8 de
+                    La <em>Farmacia Fiorilli JR</em> fue fundada el lunes 8 de
                     enero de 1996 como una pequeña empresa familiar. Surgió como
                     sociedad entre la farmacéutica Mónica Beatriz Fiorilli y el
                     señor Raúl Jacquet. Desde sus inicios, el establecimiento,
@@ -119,13 +119,13 @@ export default function QuienesSomos() {
                   <p className="feature-card-text">
                     En marzo de 2017, la farmacéutica Mónica Beatriz Fiorilli
                     asumió el cargo de directora técnica y el establecimiento
-                    pasó a denominarse <em>Farmacia JR Fiorilli</em>. Ese mismo
+                    pasó a denominarse <em>Farmacia Fiorilli JR</em>. Ese mismo
                     año, la Dra. Fiorilli se incorporó al consejo directivo de
                     la filial Castelar, Ituzaingó y Morón del Colegio de
                     Farmacéuticos, cargo que continúa ejerciendo en la
                     actualidad , manteniendo siempre una cordial relación entre
                     la
-                    <em>Farmacia JR Fiorilli</em> y el colegio de farmacéuticos
+                    <em>Farmacia Fiorilli JR</em> y el colegio de farmacéuticos
                     de Morón .
                   </p>
                   <p className="feature-card-text">
@@ -137,7 +137,7 @@ export default function QuienesSomos() {
                     <em>Prácticas Profesionales Externas</em>.
                   </p>
                   <p className="feature-card-text">
-                    Hoy, <em>Farmacia JR Fiorilli</em> continúa firmemente con
+                    Hoy, <em>Farmacia Fiorilli JR</em> continúa firmemente con
                     su objetivo primario de ser una institución comprometida con
                     la salud, ofreciendo productos accesibles, atención
                     personalizada, cobertura de obras sociales y una fuerte
@@ -155,7 +155,7 @@ export default function QuienesSomos() {
               >
                 <div>
                   <p className="feature-card-text">
-                    En <em>Farmacia JR Fiorilli</em> trabajamos día a día
+                    En <em>Farmacia Fiorilli JR</em> trabajamos día a día
                     guiados por una serie de objetivos que reflejan nuestro
                     compromiso con la salud, la calidad y la mejora continua.
                     Estos son los pilares que orientan nuestra labor:
@@ -227,7 +227,7 @@ export default function QuienesSomos() {
                   <div className="d-flex flex-column flex-md-row justify-content-around align-items-center">
                     <div>
                       <p className="feature-card-text">
-                        En <em>Farmacia JR Fiorilli</em> estamos comprometidos
+                        En <em>Farmacia Fiorilli JR</em> estamos comprometidos
                         en acompañar a nuestros pacientes a lo largo de sus
                         tratamientos, proporcionando productos seguros y de alta
                         calidad. Este compromiso se sostiene en una atención
@@ -279,7 +279,7 @@ export default function QuienesSomos() {
                 <div className="d-flex flex-column flex-md-row justify-content-center align-items-center">
                   <div>
                     <p className="feature-card-text">
-                      En <em>Farmacia JR Fiorilli</em> creemos en un modelo de
+                      En <em>Farmacia Fiorilli JR</em> creemos en un modelo de
                       farmacia centrado en las personas. Nuestra principal
                       especialidad es la elaboración de preparados magistrales,
                       lo que nos permite ofrecer soluciones personalizadas,
@@ -330,7 +330,7 @@ export default function QuienesSomos() {
                       .
                     </p>
                     <p className="feature-card-text">
-                      En definitiva, <em>Farmacia JR Fiorilli</em> es más que un
+                      En definitiva, <em>Farmacia Fiorilli JR</em> es más que un
                       lugar donde adquirir medicamentos: es un espacio de
                       confianza, cuidado y compromiso, donde cada persona es
                       atendida con dedicación, conocimiento y calidez,
@@ -348,7 +348,7 @@ export default function QuienesSomos() {
       <section className="team-section">
         <div className="container">
           <SectionTitle
-            title="El Corazón de Farmacia JR Fiorilli"
+            title="El Corazón de Farmacia Fiorilli JR"
             subtitle="Un equipo multidisciplinar de farmacéuticos especialistas, técnicos y expertos en formulación comprometidos con tu bienestar."
           />
 

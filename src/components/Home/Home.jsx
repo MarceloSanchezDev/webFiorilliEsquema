@@ -17,6 +17,7 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 import InfoCard from "../InfoCard/InfoCard";
 import "./Home.css";
 import { useEffect } from "react";
+import Videos from "../Video/Videos";
 
 export default function Home() {
   useEffect(() => {
@@ -67,7 +68,7 @@ export default function Home() {
         <div className="container">
           <SectionTitle
             title="Nuestro Compromiso con tu Salud"
-            subtitle="En Farmacia JR Fiorilli combinamos atención personalizada, preparados magistrales de calidad y tecnología actualizada para brindar soluciones seguras, accesibles y pensadas para cada paciente."
+            subtitle="En Farmacia Fiorilli JR combinamos atención personalizada, preparados magistrales de calidad y tecnología actualizada para brindar soluciones seguras, accesibles y pensadas para cada paciente."
           />
 
           <div className="bento-grid">
@@ -124,7 +125,7 @@ export default function Home() {
                 </div>
 
                 <div className="image-card-media">
-                  <img src={logo} alt="Tecnología farmacéutica" />
+                  <Videos video={"filosofia.mp4"}></Videos>
                 </div>
               </div>
             </div>

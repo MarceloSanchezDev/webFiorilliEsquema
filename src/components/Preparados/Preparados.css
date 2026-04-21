@@ -79,11 +79,12 @@ color: #22a652;
 }
 
 .preparados-sidebar {
-  width: 260px;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  position: sticky;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    top: 100px;
 }
 
 .preparados-sidebar-title {
@@ -202,9 +203,13 @@ color: #22a652;
     flex-direction: column;
   }
 
-  .preparados-sidebar {
+.preparados-sidebar {
     width: 100%;
-  }
+    position: static;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
 
   .preparados-products-grid {
     grid-template-columns: 1fr;

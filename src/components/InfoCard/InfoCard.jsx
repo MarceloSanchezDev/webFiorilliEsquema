@@ -8,11 +8,9 @@ export default function InfoCard({
   children,
 }) {
   return (
-    <article className={`info-card info-card-${variant}`}>
+    <article className={`info-card info-card-${variant} flex flex-col center`}>
       {icon && (
-        <span className="material-symbols-outlined info-card-icon">
-          {icon}
-        </span>
+        <span className="material-symbols-outlined info-card-icon">{icon}</span>
       )}
       <h3>{title}</h3>
       {text && <p>{text}</p>}

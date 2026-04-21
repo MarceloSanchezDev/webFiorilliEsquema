@@ -6,7 +6,9 @@
   position: sticky;
   top: 0;
 }
-
+.top-100{
+  top: 100px;
+}
 .fixed {
   position: fixed;
   top: 0;
@@ -74,7 +76,9 @@
 .justify-end {
   justify-content: flex-end;
 }
-
+.justifyCenter {
+  justify-content: center;
+}
 /* GAP */
 .gap-1 {
   gap: 0.25rem;
@@ -197,7 +201,9 @@
   .justify-md-end {
     justify-content: flex-end;
   }
-
+.justify-md-Center {
+  justify-content: center;
+}
   .alignCenter-md {
     align-items: center;
   }

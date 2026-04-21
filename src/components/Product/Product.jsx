@@ -609,7 +609,7 @@ export default function Product() {
   const navigate = useNavigate();
   const { name } = useParams();
   const nombreDecodificado = decodeURIComponent(name || "");
-  const mensaje = `Hola Farmacia JR Fiorilli, quiero consultar por un ${name}`;
+  const mensaje = `Hola Farmacia Fiorilli JR, quiero consultar por un ${name}`;
 
   useEffect(() => {
     window.scrollTo({
@@ -723,7 +723,7 @@ export default function Product() {
 
                 <QuoteCard
                   text="Cada preparado se elabora de forma individualizada, respetando criterios farmacéuticos de seguridad y calidad."
-                  author="Farmacia JR Fiorilli"
+                  author="Farmacia Fiorilli JR"
                 />
               </div>
 
