@@ -27,8 +27,16 @@
 }
 
 /* LISTA */
-
-
+.recommendations-aside-list{
+overflow: hidden;
+display: flex;
+flex-direction: row !important;
+}
+.recommendation-aside-card{
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 200px;
+}
 /* ========================= */
 /* 📱 TABLET */
 /* ========================= */
