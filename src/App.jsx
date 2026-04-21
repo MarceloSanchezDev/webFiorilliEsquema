@@ -9,8 +9,15 @@ import Product from "./components/Product/Product";
 import NotFound from "./components/NotFound/NotFound";
 import Recomendaciones from "./components/Recomendaciones/Recomendaciones";
 import BotonesChat from "./components/BotonesChat/BotonesChat";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <main>
       <Header></Header>

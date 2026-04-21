@@ -1,7 +1,14 @@
 import "./Recomendaciones.css";
 import imgFAQ from "../../assets/imagen-faq.png";
 import FAQSection from "../FAQSection/FAQSection";
+import { useEffect } from "react";
 const Recomendaciones = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <main className="home-main">
       <section className="hero-section">

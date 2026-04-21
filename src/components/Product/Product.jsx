@@ -5,7 +5,7 @@ import QuoteCard from "../QuoteCard/QuoteCard";
 import "./Product.css";
 import RecomendacionesAside from "../RecomendacionesAside/RecomendacionesAside";
 import { useEffect, useMemo, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 // dejá tu array products acá igual que lo tenés
 const products = [
@@ -606,8 +606,10 @@ const normalizarTexto = (texto = "") =>
 const crearSlugImagen = (texto = "") => texto.trim().replace(/\s+/g, "");
 
 export default function Product() {
+  const navigate = useNavigate();
   const { name } = useParams();
   const nombreDecodificado = decodeURIComponent(name || "");
+  const mensaje = `Hola Farmacia JR Fiorilli, quiero consultar por un ${name}`;
 
   useEffect(() => {
     window.scrollTo({
@@ -817,8 +819,21 @@ export default function Product() {
               </p>
 
               <div className="product-cta-actions">
-                <Button variant="light">Hablar con un Farmacéutico</Button>
-                <Button variant="outline-light">Ver más productos</Button>
+                <Button variant="light">
+                  <a
+                    href={`https://wa.me/5491127490223?text=${encodeURIComponent(mensaje)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Preguntar Por el Preparado
+                  </a>
+                </Button>
+                <Button
+                  variant="outline-light"
+                  onClick={() => navigate("/preparados")}
+                >
+                  Ver más preparados
+                </Button>
               </div>
             </div>
           </section>

@@ -16,8 +16,15 @@ import Button from "../Button/Button";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import InfoCard from "../InfoCard/InfoCard";
 import "./Home.css";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <main className="home-main">
       <section className="hero-section">

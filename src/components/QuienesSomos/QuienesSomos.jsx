@@ -6,8 +6,15 @@ import StatCard from "../StatCard/StatCard";
 import FeatureCard from "../FeatureCard/FeatureCard";
 import TeamMemberCard from "../TeamMemberCard/TeamMemberCard";
 import "./QuienesSomos.css";
+import { useEffect } from "react";
 
 export default function QuienesSomos() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <main className="about-main">
       <section className="about-hero-section">
