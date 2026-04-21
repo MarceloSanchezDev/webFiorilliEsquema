@@ -153,13 +153,15 @@ color: #22a652;
 /* PROCESS */
 .preparados-process-section {
   margin-top: 6rem;
+
 }
 
 .preparados-process-box {
   background: #eef3f5;
   border-radius: 3rem;
-  padding: 3rem 2rem;
+  padding: 16px !important;
   position: relative;
+  
 }
 
 .preparados-process-label {
@@ -176,7 +178,7 @@ color: #22a652;
 .preparados-process-grid {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 2rem;
 }
 

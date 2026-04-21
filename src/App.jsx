@@ -19,7 +19,7 @@ function App() {
         <Route path="/" element={<Home></Home>} />
         <Route path="/quienesSomos" element={<QuienesSomos></QuienesSomos>} />
         <Route path="/preparados" element={<Preparados></Preparados>} />
-        <Route path="/product" element={<Product></Product>} />
+        <Route path="/item/:name" element={<Product></Product>} />
         <Route path="/FAQ" element={<Recomendaciones />}></Route>
       </Routes>
       <BotonesChat></BotonesChat>

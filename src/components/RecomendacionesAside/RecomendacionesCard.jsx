@@ -1,13 +1,8 @@
-export default function RecommendationCard({
-  image,
-  alt,
-  title,
-  description,
-  link,
-}) {
+export default function RecommendationCard({ alt, title, description, link }) {
+  const imagen = `/JPG/${title.trim().replace(/\s+/g, "")}/1.jpg`;
   return (
     <article className="recommendation-aside-card">
-      <img src={image} alt={alt} className="recommendation-aside-card-image" />
+      <img src={imagen} alt={alt} className="recommendation-aside-card-image" />
 
       <h4 className="recommendation-aside-card-title">{title}</h4>
 

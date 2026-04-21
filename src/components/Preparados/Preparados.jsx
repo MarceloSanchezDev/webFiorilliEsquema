@@ -606,13 +606,18 @@ const processSteps = [
     text: "Reciba un presupuesto detallado según sus requerimientos.",
   },
   {
+    icon: "check_circle",
+    title: "3. Validación de la receta",
+    text: "Verificamos que su Receta este en regla.",
+  },
+  {
     icon: "biotech",
-    title: "3. Elaboración",
+    title: "4. Elaboración",
     text: "Nuestros especialistas preparan su fórmula en el laboratorio.",
   },
   {
     icon: "hand_package",
-    title: "4. Entrega",
+    title: "5. Entrega",
     text: "Reciba su preparado magistral en la farmacia con total seguridad.",
   },
 ];

@@ -1,6 +1,6 @@
 import Button from "../Button/Button";
 import "./ProductCard.css";
-
+import { useNavigate } from "react-router-dom";
 export default function ProductCard({
   image,
   category,
@@ -9,6 +9,7 @@ export default function ProductCard({
   details,
   receta,
 }) {
+  const navigate = useNavigate();
   return (
     <article className="product-card">
       <div className="product-card-image-wrap">
@@ -40,7 +41,9 @@ export default function ProductCard({
         ) : (
           <span className="product-card-details">Venta Libre</span>
         )}
-        <Button variant="primary">Ver Detalles</Button>
+        <Button variant="primary" onClick={() => navigate(`/item/${title}`)}>
+          Ver Detalles
+        </Button>
       </div>
     </article>
   );
