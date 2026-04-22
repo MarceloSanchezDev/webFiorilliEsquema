@@ -599,7 +599,7 @@ const processSteps = [
   {
     icon: "prescriptions",
     title: "1. Receta",
-    text: "Recibimos su receta médica original.",
+    text: "Recibimos su receta médica original por whatsapp y presencial.",
   },
   {
     icon: "request_quote",
