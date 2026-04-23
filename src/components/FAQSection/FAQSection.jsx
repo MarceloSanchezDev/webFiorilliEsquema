@@ -201,7 +201,7 @@ También se preparan productos como champús, lociones, tónicos,
         ))}
       </div>
       <div className="flex center width-100 height-100 sticky top-100 padding-1">
-        <Videos video={"/filosofia.mp4"}></Videos>
+        <Videos video={"/compromiso.mp4"}></Videos>
       </div>
     </section>
   );

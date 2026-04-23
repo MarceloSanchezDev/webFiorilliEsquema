@@ -4,6 +4,7 @@ import ProductCard from "../ProductCard/ProductCard";
 import ProcessStepCard from "../ProcessStepCard/ProcessStepCard";
 import imgPreparados from "../../assets/imagen-faq.png";
 import Videos from "../Video/Videos";
+import rf from "../../assets/rutinaFacial.png";
 import "./Preparados.css";
 import { useEffect, useState } from "react";
 
@@ -686,8 +687,8 @@ export default function Preparados() {
                 ))}
               </div>
             </div>
-            <div className="width-100 flex center">
-              <Videos video={"/filosofia.mp4"}></Videos>
+            <div className="width-100 flex center preparados-advice-card">
+              <img src={rf} alt="Rutina Facial" className="" />
             </div>
           </aside>
           {filteredProducts.length > 0 ? (

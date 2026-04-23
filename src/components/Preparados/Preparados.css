@@ -103,12 +103,18 @@ color: #22a652;
 }
 
 .preparados-advice-card {
+  width: 200px;
   padding: 1.5rem;
   background: rgba(220, 232, 239, 0.55);
   border: 1px solid rgba(0, 90, 156, 0.08);
   border-radius: 1.25rem;
 }
-
+.preparados-advice-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
 .preparados-advice-icon {
   color: #22a652;
   margin-bottom: 0.75rem;

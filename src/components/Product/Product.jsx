@@ -6,6 +6,7 @@ import "./Product.css";
 import RecomendacionesAside from "../RecomendacionesAside/RecomendacionesAside";
 import { useEffect, useMemo, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
+import Videos from "../Video/Videos";
 
 // dejá tu array products acá igual que lo tenés
 const products = [
@@ -24,6 +25,7 @@ const products = [
       "Es el primer paso de la rutina “skin care”  , preparando tu piel para màs cuidados.",
     ],
     receta: false,
+    video: false,
   },
   {
     categoria: "Skin Care",
@@ -40,6 +42,7 @@ const products = [
       "	Brinda firmeza, brillo  y elasticidad ",
     ],
     receta: false,
+    video: false,
   },
   {
     categoria: "Skin Care",
@@ -56,6 +59,7 @@ const products = [
       "Protege la piel del deterioro y desgaste.",
     ],
     receta: false,
+    video: true,
   },
   {
     categoria: "Skin Care",
@@ -71,6 +75,7 @@ const products = [
       "Proporciona sensación de frescura, descanso y bienestar, reduciendo la incomodidad al caminar",
     ],
     receta: false,
+    video: false,
   },
   {
     categoria: "Skin Care",
@@ -86,6 +91,7 @@ const products = [
       "Ayuda a hidratar la piel y nutrirla ",
     ],
     receta: false,
+    video: false,
   },
   {
     categoria: "Skin Care",
@@ -101,6 +107,7 @@ const products = [
       "Apta para aplicación sobre  pieles sensibles  ",
     ],
     receta: false,
+    video: false,
   },
   {
     categoria: "Skin Care",
@@ -117,6 +124,7 @@ const products = [
       "Es una crema de rápida absorción y fácil aplicación ",
     ],
     receta: false,
+    video: false,
   },
   {
     categoria: "Skin Care",
@@ -132,6 +140,7 @@ const products = [
       "Estimula la producción natural de colágeno de la piel ",
     ],
     receta: false,
+    video: false,
   },
   {
     categoria: "Skin Care",
@@ -149,6 +158,7 @@ const products = [
       "Es de rápida y fácil aplicación ",
     ],
     receta: false,
+    video: false,
   },
   {
     categoria: "Skin Care",
@@ -164,6 +174,7 @@ const products = [
       "Brinda una mayor elasticidad y firmeza de la piel  ",
     ],
     receta: false,
+    video: false,
   },
 
   {
@@ -181,6 +192,7 @@ Preparado únicamente para uso externo. `,
       "Es de fácil y rápida aplicación ",
     ],
     receta: false,
+    video: false,
   },
   {
     categoria: "Medicamentos de uso topico",
@@ -197,6 +209,7 @@ Preparado únicamente para uso externo. `,
       "Fácil Aplicación y rápida acción ",
     ],
     receta: false,
+    video: false,
   },
   {
     categoria: "Medicamentos de uso topico",
@@ -213,6 +226,7 @@ Preparado únicamente para uso externo. `,
       "Útil para el tratamiento de heridas leves y superficiales de la piel.",
     ],
     receta: true,
+    video: true,
   },
   {
     categoria: "Medicamentos de uso topico",
@@ -230,6 +244,7 @@ Preparado únicamente para uso externo. `,
       "Es un desinfectante de piel de amplio espectro ",
     ],
     receta: false,
+    video: false,
   },
 
   {
@@ -247,6 +262,7 @@ Preparado únicamente para uso externo. `,
       "Penetra en la uña para atacar el hongo, promoviendo el crecimiento de una uña sana.",
     ],
     receta: false,
+    video: true,
   },
   {
     categoria: "Productos de origen natural",
@@ -263,6 +279,7 @@ Preparado únicamente para uso externo. `,
       "Gracias a su combinación de extractos vegetales, acelera el proceso digestivo para que los alimentos no resulten pesados.",
     ],
     receta: false,
+    video: false,
   },
   {
     categoria: "Productos de origen natural",
@@ -279,6 +296,7 @@ Preparado únicamente para uso externo. `,
       "Facilita la producción de bilis y enzimas digestivas, lo que reduce la pesadez, la hinchazón y las digestiones lentas.",
     ],
     receta: false,
+    video: false,
   },
   {
     categoria: "Productos de origen natural",
@@ -297,6 +315,7 @@ Preparado únicamente para uso externo. `,
       "Tienen propiedades que reducen la hinchazón y la inflamatoria",
     ],
     receta: false,
+    video: false,
   },
   {
     categoria: "Productos de origen natural",
@@ -313,6 +332,7 @@ Preparado únicamente para uso externo. `,
       "Sus componentes naturales ayudan a aliviar la tensión física asociada al estrés promoviendo la relajación muscular  durante el descanso.",
     ],
     receta: false,
+    video: false,
   },
   {
     categoria: "Productos de origen natural",
@@ -330,6 +350,7 @@ Preparado únicamente para uso externo. `,
       "Facilitan una respuesta inmunológica más equilibrada, especialmente en niños con problemas respiratorios crónicos o personas con defensas bajas",
     ],
     receta: false,
+    video: false,
   },
   {
     categoria: "Productos de origen natural",
@@ -347,6 +368,7 @@ Preparado únicamente para uso externo. `,
       "Ayudan a reducir la inflamación abdominal y pesadez y mejorando la digestión ",
     ],
     receta: false,
+    video: false,
   },
   {
     categoria: "Productos de origen natural",
@@ -363,6 +385,7 @@ Preparado únicamente para uso externo. `,
       "Penetra en la uña para atacar el hongo, promoviendo el crecimiento de una uña sana.",
     ],
     receta: false,
+    video: false,
   },
   {
     categoria: "Productos de origen natural",
@@ -379,6 +402,7 @@ Preparado únicamente para uso externo. `,
       "Penetra en la uña para atacar el hongo, promoviendo el crecimiento de una uña sana.",
     ],
     receta: false,
+    video: false,
   },
   {
     categoria: "Productos de origen natural",
@@ -395,6 +419,7 @@ Preparado únicamente para uso externo. `,
       "Mejora de la circulación sanguínea .",
     ],
     receta: false,
+    video: false,
   },
   {
     categoria: "Productos de origen natural",
@@ -410,6 +435,7 @@ Preparado únicamente para uso externo. `,
       "Alivio de la Tos: Actúa como antitusivo natural para disminuir la tos constante",
     ],
     receta: false,
+    video: false,
   },
   {
     categoria: "Productos de origen natural",
@@ -426,6 +452,7 @@ Preparado únicamente para uso externo. `,
       "Regula el ritmo cardíaco, actúa como sedante ligero y mejora la oxigenación muscular.",
     ],
     receta: false,
+    video: false,
   },
   {
     categoria: "Productos de origen natural",
@@ -442,6 +469,7 @@ Preparado únicamente para uso externo. `,
       "ayudan a proteger y estimular el buen funcionamiento del hígado.",
     ],
     receta: false,
+    video: false,
   },
   {
     categoria: "Productos de origen natural",
@@ -458,6 +486,7 @@ Preparado únicamente para uso externo. `,
       "Ayudan a regular el transito estomacal ",
     ],
     receta: false,
+    video: false,
   },
   {
     categoria: "Productos de origen natural",
@@ -468,6 +497,7 @@ Preparado únicamente para uso externo. `,
     recomendaciones: ``,
     beneficios: [""],
     receta: false,
+    video: false,
   },
   {
     categoria: "Suplementos",
@@ -484,6 +514,7 @@ Preparado únicamente para uso externo. `,
       "Mejora la fuerza muscular, la resistencia y el rendimiento mental o cognitivo.",
     ],
     receta: false,
+    video: true,
   },
   {
     categoria: "Suplementos",
@@ -501,6 +532,7 @@ Preparado únicamente para uso externo. `,
       "Ayudan al bienestar cardiovascular y cerebral ",
     ],
     receta: false,
+    video: true,
   },
   {
     categoria: "Suplementos",
@@ -516,6 +548,7 @@ Preparado únicamente para uso externo. `,
       "Contribuye a la fijación de calcio en huesos y ayuda a regular la presión arterial.",
     ],
     receta: false,
+    video: true,
   },
   {
     categoria: "Suplementos",
@@ -531,6 +564,7 @@ Preparado únicamente para uso externo. `,
       "Favorece un descanso reparador y profundo, disminuyendo insomnio , la ansiedad y el  estrés",
     ],
     receta: false,
+    video: true,
   },
   {
     categoria: "Suplementos",
@@ -547,6 +581,7 @@ Preparado únicamente para uso externo. `,
       "Ayuda a disminuir la inflamación en enfermedades como la artritis reumatoide y la artrosis.",
     ],
     receta: false,
+    video: true,
   },
   {
     categoria: "Suplementos",
@@ -563,6 +598,7 @@ Preparado únicamente para uso externo. `,
       "Ayuda a reducir el estrés, la ansiedad y los síntomas depresivos mediante la regulación de neurotransmisores",
     ],
     receta: false,
+    video: true,
   },
   {
     categoria: "Suplementos",
@@ -578,6 +614,7 @@ Preparado únicamente para uso externo. `,
       "Es esencial para la reparación de tejidos, curación de heridas y el mantenimiento de huesos y dientes.",
     ],
     receta: false,
+    video: true,
   },
   {
     categoria: "Suplementos",
@@ -593,6 +630,7 @@ Preparado únicamente para uso externo. `,
       "Favorece el bienestar físico y el crecimiento muscular post entrenamiento ",
     ],
     receta: false,
+    video: true,
   },
 ];
 
@@ -667,7 +705,7 @@ export default function Product() {
       </main>
     );
   }
-
+  console.log(`/videos/${slug}.mp4`);
   return (
     <main className="product-main">
       <div className="flex flex-col flex-md-row width-100">
@@ -760,16 +798,20 @@ export default function Product() {
 
           <section className="product-usage-section">
             <div className="container product-usage-grid">
-              <div className="product-usage-image-wrap">
-                <img
-                  src={img || imagenes[0]}
-                  alt={producto.nombre}
-                  className="product-usage-image"
-                  onError={(e) => {
-                    e.currentTarget.src = "/placeholder-product.jpg";
-                  }}
-                />
-              </div>
+              {producto.video ? (
+                <Videos video={`${slug}.mp4`}></Videos>
+              ) : (
+                <div className="product-usage-image-wrap">
+                  <img
+                    src={img || imagenes[0]}
+                    alt={producto.nombre}
+                    className="product-usage-image"
+                    onError={(e) => {
+                      e.currentTarget.src = "/placeholder-product.jpg";
+                    }}
+                  />
+                </div>
+              )}
 
               <div className="product-usage-content">
                 <h2 className="product-section-title">

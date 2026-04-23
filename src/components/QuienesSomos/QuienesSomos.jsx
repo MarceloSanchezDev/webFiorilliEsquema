@@ -7,6 +7,7 @@ import FeatureCard from "../FeatureCard/FeatureCard";
 import TeamMemberCard from "../TeamMemberCard/TeamMemberCard";
 import "./QuienesSomos.css";
 import { useEffect } from "react";
+import Videos from "../Video/Videos";
 
 export default function QuienesSomos() {
   useEffect(() => {
@@ -57,11 +58,7 @@ export default function QuienesSomos() {
 
           <div className="about-hero-media">
             <div className="about-hero-image-wrap">
-              <img
-                className="about-hero-image"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3p4jWF2ib0rdAcrZ7XK-AT-yRM7Z7J7Ymui3pUA3Kx0F-zqwngxLhDrGyzMxvC7tN0mc6DeVKAQ60UiXo0MK8Vo1hBnI6e-STIo64v3xwc5dVstI61tBD2jeInh94cQYjlIH8t7Rc-7YGEN5X9cAR_66YZJ5kbcF7uIqK5zNp2X0AyX4CIabLMz-SI4A8oDkOTOJ5sUmUJ5CPdL528S_bIl4wJMOrmaXkd2TEzIJTwjs653qCKl0Z2J04W58Fbl6AOGmAUZFl4ZoY"
-                alt="Equipo farmacéutico en laboratorio"
-              />
+              <Videos video="quienes-somos.mp4"></Videos>
             </div>
 
             <div className="about-quote-card">
