@@ -10,6 +10,7 @@ import NotFound from "./components/NotFound/NotFound";
 import Recomendaciones from "./components/Recomendaciones/Recomendaciones";
 import BotonesChat from "./components/BotonesChat/BotonesChat";
 import { useEffect } from "react";
+import Especialidades from "./components/Especialidades/Especialidades";
 
 const products = [
   {
@@ -679,6 +680,7 @@ function App() {
           path="/preparados"
           element={<Preparados products={products}></Preparados>}
         />
+        <Route path="/especialidades" element={<Especialidades />} />
         <Route
           path="/item/:name"
           element={<Product products={products}></Product>}
