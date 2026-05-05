@@ -18,13 +18,13 @@ const products = [
     img: ["1.jpg", "2.jpg", "3.jpg"],
     compo:
       "Rp/ Laurilpoliglucosido 5%, Crillet 4 3%,Propanotriol 3% agua conservada csp 100 ml",
-    uso: "Aplicar una cantidad adecuada  del agua micelar sobre un disco de algodón y pasalor suavemente por todo el rostro para eliminar maquillaje, impurezas y exceso de grasa (no es necesario frotar). Evita el contacto directo con los ojos. Una vez aplicado se debe dejar  actuar unos minutos y luego   enjuaga con agua tibia. Se debe aplicar  sobre la piel limpia y seca, como primer paso de la rutina facial, por la mañana y/o por la noche",
-    recomendaciones: `No se debe reutilizar el mismo algodón en distintas zonas del rostro. Si notas enrojecimiento, ardor o picazón, suspender su uso y consulta a un profesional. Guardar el producto en un lugar fresco, seco y fuera del alcance de los niños. Preparado únicamente para uso externo `,
+    uso: "Aplicar una cantidad adecuada  del agua micelar sobre un disco de algodón y pasalor suavemente por todo el rostro para eliminar maquillaje, impurezas y exceso de grasa (no es necesario frotar). Evita el contacto directo con los ojos. Una vez aplicado se debe dejar  actuar unos minutos y luego   enjuagar con agua tibia. Se debe aplicar  sobre la piel limpia y seca, como primer paso de la rutina facial, por la mañana y/o por la noche",
+    recomendaciones: `No se debe utilizar el mismo algodón en distintas zonas del rostro. Si notas enrojecimiento, ardor o picazón, suspender su uso y consulta a un profesional. Guardar el producto en un lugar fresco, seco y fuera del alcance de los niños. Preparado únicamente para uso externo `,
     beneficios: [
       "Ayuda a remover el maquillaje y a limpiar  la piel de forma rápida y facili.",
       "Apta para todo tipo de piel .",
       "Hidratar y suaviza la  piel. ",
-      "Es el primer paso de la rutina “skin care”  , preparando tu piel para màs cuidados.",
+      "Es el primer paso de la rutina “skin care”  , ayudando a preparar tu piel para màs cuidados.",
     ],
     receta: false,
     video: false,
@@ -100,7 +100,7 @@ const products = [
     nombre: "Emulsión Limpiadora",
     img: ["1.jpg", "2.jpg", "3.jpg"],
     compo: "Rp/ Betaína 8% Petrolato 10% Dimeticona 1 % ",
-    uso: ": Aplicar una cantidad adecuada en la  cara y cuello, dejar actuar 30 segundos  y luego para ayudar a eliminar el maquillaje , impurezas y exceso de grasa en el rostro , luego  enjuagar con abundante agua tibia y secar suavemente , para luego continuar con los otros pasos de la rutina skin care ",
+    uso: "Aplicar una cantidad adecuada en la  cara y cuello, dejar actuar 30 segundos  y luego para ayudar a eliminar el maquillaje , impurezas y exceso de grasa en el rostro , luego  enjuagar con abundante agua tibia y secar suavemente , para luego continuar con los otros pasos de la rutina skin care ",
     recomendaciones: `Evita el contacto directo con los ojos. No aplicar sobre piel irritada o lesionada.  Si aparece enrojecimiento, picazón o ardor, suspender su uso y consulté con un profesional. Conservar el producto en un lugar fresco, seco y alejado de la luz solar directa. Mantenlo fuera del alcance de los niños. Preparado únicamente para uso externo. `,
     beneficios: [
       "Proporciona una limpieza profunda, rápida  y eficaz",
@@ -117,8 +117,8 @@ const products = [
     img: ["1.jpg", "2.jpg", "3.jpg"],
     compo:
       " Vitamina A palmitato 500000 ui Vitamina E 0.05 % Alantoina 0.25% emulsión nutritiva csp 300 ml",
-    uso: "Limpia y seca tu piel antes de aplicar la crema. Aplica una cantidad adecuada de la emulsión nutritiva y masajea suavemente hasta su absorción , se recomienda utilizarla una o dos veces al día, según sea necesario. Aplicar 1 o 2 veces por día en la zona afectada INDICADA PARA PIEL SECA, IRRITACIONES QUEMADURAS USO EXTERNO",
-    recomendaciones: `Evita el contacto con los ojos y suspenda su uso si observas alguna reacción desfavorable como irritación , enrojecimiento o dolor . Para obtener  una hidratación profunda, aplica después del baño. Si observas enrojecimiento, ardor o irritación persistente, suspende su uso y consulta a un profesional de la salud. No es recomendable excederse con la cantidad de crema ni la frecuencia de aplicación de la misma. Preparado únicamente para uso externo`,
+    uso: "Limpia y seca tu piel antes de aplicar la crema. Aplica una cantidad adecuada de la emulsión nutritiva y masajea suavemente hasta su absorción , se recomienda utilizarla una o dos veces al día, según sea necesario. Aplicar 1 o 2 veces por día en la zona afectada indicada para piel seca, irritaciones, quemaduras, uso externo",
+    recomendaciones: `Evita el contacto con las mucosas, heridas abiertas. si observa aluna reaccion desfavorable suspenda su uso si observas alguna reacción desfavorable como irritación , enrojecimiento o dolor . Para obtener  una hidratación profunda, aplica después del baño. Si observas enrojecimiento, ardor o irritación persistente, suspende su uso y consulta a un profesional de la salud. No es recomendable excederse con la cantidad de crema ni la frecuencia de aplicación de la misma. Preparado únicamente para uso externo`,
     beneficios: [
       "Mantiene la piel hidratada, suave y saludable ",
       "Estimula la formación de colágeno y la renovación celular, ideal para pieles secas, sensibles o irritadas.",
@@ -130,11 +130,11 @@ const products = [
   },
   {
     categoria: "Skin Care",
-    nombre: "Gotas Serum de Acido Hialuronico",
+    nombre: "Serum de Acido Hialuronico",
     img: ["1.jpg", "2.jpg", "3.jpg"],
     compo: "Rp/ Ac Hialurónico1.5 % serum csp 30 g",
     uso: "Limpia e hidrata tu piel antes de usar el serum usando productos como el agua micelar  .Es recomendable  aplicar 2-3 gotas de Serum en el área realizando movimientos suaves y circulares. Masajea ligeramente con las yemas de los dedos y deja que se absorba antes de aplicar otro  producto.",
-    recomendaciones: `No es recomendable excederse con la cantidad de crema ni la frecuencia de aplicación de la misma. Evitar aplicar sobre heridas abiertas, cortes o piel irritada. En caso de presentar irritación, enrojecimiento o ardor, suspender el uso y consultar a un profesional de la salud. Guardar el producto en un lugar fresco, seco y fuera del alcance de los niños. Preparado únicamente para uso externo.`,
+    recomendaciones: `No es recomendable excederse con la cantidad de gel ni la frecuencia de aplicación de la misma. Evitar aplicar sobre heridas abiertas, cortes o piel irritada. En caso de presentar irritación, enrojecimiento o ardor, suspender el uso y consultar a un profesional de la salud. Guardar el producto en un lugar fresco, seco y fuera del alcance de los niños. Preparado únicamente para uso externo.`,
     beneficios: [
       "Brinda una hidratación profunda de la piel ",
       "Mejora la elasticidad ,  la firmeza  y textura de la piel ",
@@ -164,10 +164,10 @@ const products = [
   },
   {
     categoria: "Skin Care",
-    nombre: "Crema para contorno de ojos",
+    nombre: "Gel para contorno de ojos",
     img: ["1.jpg", "2.jpg", "3.jpg"],
     compo: "RIGIN 3% ;Contorno de ojos  csp 15 g",
-    uso: "Antes de aplicar la crema, asegúrate de limpiar y secar bien la piel del contorno de ojos. Coloca una pequeña cantidad del producto en la yema del dedo  y  aplica suavemente sobre el hueso orbital, realizando pequeños toques sin arrastrar ni frotar la piel. Extender el producto desde el lagrimal hacia la sien, siguiendo la línea natural donde suelen aparecer las arrugas de expresión. ",
+    uso: "Antes de aplicar el gel, asegúrate de limpiar y secar bien la piel del contorno de ojos. Coloca una pequeña cantidad del producto en la yema del dedo  y  aplica suavemente sobre el hueso orbital, realizando pequeños toques sin arrastrar ni frotar la piel. Extender el producto desde el lagrimal hacia la sien, siguiendo la línea natural donde suelen aparecer las arrugas de expresión. ",
     recomendaciones: `Evite aplicar sobre párpados móviles o zonas irritadas y dentro del ojo. Usar solo la cantidad recomendada, ya que el exceso puede causar molestias e irritación . Si aparece enrojecimiento, picazón o ardor, suspenda su uso y consulta a un profesional. Conservar el producto en un lugar fresco, seco y alejado de la luz solar directa. Mantenlo fuera del alcance de los niños. Preparado únicamente para uso externo. `,
     beneficios: [
       "Protege y fortalece la piel",
@@ -188,8 +188,8 @@ const products = [
     recomendaciones: `No aplicar en áreas sensibles la piel (rosto , genitales etc) . Suspender el uso ante signos de irritación, enrojecimiento, ardor o picazón persistente, y consultar a un profesional de la salud. Conservar el producto bien cerrado, en un lugar fresco y seco, protegido de la luz y fuera del alcance de los niños.
 Preparado únicamente para uso externo. `,
     beneficios: [
-      "Tiene una Acción Amplia contra diferentes tipos de hongos de la piel ",
-      "Es una solución que se seca rápidamente, facilitando su uso en el día a día, especialmente en la zona de los pies.",
+      "Tiene una amplia acción contra diferentes tipos de hongos de la piel ",
+      "Es una solución de rapido secado, facilitando su uso en el día a día, especialmente en la zona de los pies.",
       "Reduce eficazmente el enrojecimiento, descamación y el picor (picazón).",
       "Es de fácil y rápida aplicación ",
     ],
@@ -223,7 +223,7 @@ Preparado únicamente para uso externo. `,
 `,
     beneficios: [
       "Reduce la inflamación, el enrojecimiento y la picazón en la piel.",
-      "Combate infecciones causadas por hongos y levaduras.",
+      "Combate infecciones causadas por hongos y bacterias.",
       "Elimina bacterias que infectan heridas menores, eccemas o dermatitis",
       "Útil para el tratamiento de heridas leves y superficiales de la piel.",
     ],
@@ -263,7 +263,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
       "Es un producto de acción rápida y duradera con una fácil aplicación.",
       "Es muy eficaz en la desinfección de la piel, pequeñas heridas, arañazos y quemaduras superficiales",
       "Apto para pieles sensibles",
-      "Es un desinfectante de piel de amplio espectro ",
+      "Es un desinfectante de amplio espectro antibacteriano",
     ],
     receta: false,
     video: false,
