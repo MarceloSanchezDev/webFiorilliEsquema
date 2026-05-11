@@ -18,6 +18,7 @@ import InfoCard from "../InfoCard/InfoCard";
 import "./Home.css";
 import { useEffect } from "react";
 import Videos from "../Video/Videos";
+import EspecialidadesInfo from "../EspecialidadesInfo/EspecialidadesInfo";
 
 export default function Home() {
   useEffect(() => {
@@ -317,7 +318,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+<section>
+  <EspecialidadesInfo></EspecialidadesInfo>
+</section>
       <section class="horarios-section">
         <div class="horarios-overlay"></div>
 
