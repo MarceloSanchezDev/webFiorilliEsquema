@@ -2,6 +2,13 @@
   padding-top: 6rem;
   background: #f8fafa;
 }
+.especialidades-puntos{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 .especialidades-puntos > li {
   list-style: none;
   position: relative;
@@ -14,7 +21,6 @@
   position: absolute;
   left: 0;
   top: 0;
-
   color: var(--primerColor);
   font-weight: bold;
 }

@@ -3,38 +3,27 @@ import "./Especialidades.css";
 
 const especialidades = [
   {
-    eyebrow: "Dosis Infantiles",
-    title: "Pediatría",
+    eyebrow: "",
+    title: "Pediátricos",
     text: [
-      "Ajustamos dosis exactas y sabores agradables para asegurar la adherencia al tratamiento en pacientes pediátricos.",
-      "Beneficios: eliminación de alérgenos, formas farmacéuticas amigables, jarabes personalizados y dosis adaptadas.",
-    ],
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCmk9dhdpQF3Vf4Yly7Og3iBqvOQoES71b-HYmAkvdUd6cHh0NhVRGeNkza97eaBaBQ07i3kocWdkXzlb9oV1wa_sMGF67SmC8hbao5zmCXI7mj7P7GEChfbgxCWSjWSVG5y8ASjREaoLy7XWBO77kaMsRF5oSKk9PAKfJmSqNLHn-BeCDuUMHG7sSvZD0MuBnOs0_uHRpQd3TatbzucENelzUgoW_5wCkpkDShaRvNmIwv6sChkT3qHBjlTlWEu3LAFtonFMTAca4K",
-    alt: "Pediatría",
-    variant: "soft",
-    reverse: true,
-  },
-  {
-    eyebrow: "Medicina Cutánea",
-    title: "Dermatología",
-    text: [
-      "Combinamos activos dermatológicos en vehículos específicos como cremas, geles y lociones para optimizar la penetración cutánea.",
-      "Aplicaciones: tratamientos para acné, psoriasis, hiperpigmentación y formulaciones antienvejecimiento.",
-    ],
+"En Farmacia Fiorilli JR nos dedicamos a la elaboración de productos pediátricos, ofreciendo soluciones seguras y eficaces adaptadas a las necesidades específicas  de cada paciente. Debido a que muchos medicamentos  dentro de la industria farmacéutica  no se encuentran disponibles en presentaciones adecuadas para niños, desarrollamos fórmulas magistrales personalizadas para cada caso en específico.",      "Aplicaciones: tratamientos para acné, psoriasis, hiperpigmentación y formulaciones antienvejecimiento.",
+"Elaboramos distintas formas farmacéuticas, como soluciones, suspensiones y jarabes, cápsulas, y también preparados tópicos como cremas, pomadas, ungüentos y polvos.",
+"Cada formulación se realiza de manera individual, ajustando cuidadosamente la dosis según la edad y el peso del paciente , garantizando precisión, calidad y seguridad en cada tratamiento."
+
+],
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuCNSqTVHB6Hj9E5yPI5lAYK3igCGa_qlD69wIYKS9yzspS2cVdVNwHNKjrwr7agY6hA15fjoGrkRM1x5NEG8-llyKlEK3q8s2UNcR6EzeS4Fdw-y_JA71Xm16x3J3qANYF0kGX5qXrSOx69ggPmLYsvdTWviyZA1Zhal0qAhFq96CIawfn5odrsR-dpQUKNy2erKjYrHFFhFJRn-PNr7FIQNcFtMqG4nYmJgR48Rp6_C_3fSS0xACKPFGtNvshKVm3QGOFm1XMdL6Od6",
-    alt: "Dermatología",
+    alt: "Pediátricos",
     variant: "light",
     reverse: false,
   },
   {
-    eyebrow: "Bienestar Holístico",
-    title: "Nutracéuticos y Suplementos",
+    eyebrow: "",
+    title: "Dermatológicos",
     text: [
-      "Diseñamos suplementos de grado farmacéutico, libres de rellenos innecesarios y adaptados a requerimientos nutricionales específicos.",
-      "Soportes: vitaminas, complejos de aminoácidos personalizados y suplementación para optimización metabólica.",
-    ],
+"La piel es un órgano de gran sensibilidad y complejidad, que necesita soluciones específicas y cuidadosamente adaptadas a cada caso particular . En Farmacia Fiorilli JR, nos dedicamos a la elaboración de preparados dermatológicos personalizados, pensados específicamente para  brindar una  respuesta  efectivas a las distintas necesidades de nuestros pacientes." ,
+"Elaboramos una amplia variedad de formas farmacéuticas de uso tópico, como cremas, geles, lociones, pomadas y soluciones, seleccionando de manera precisa los componentes más adecuados para cada tratamiento.",
+"Cada preparación se realiza de forma individual, teniendo en cuenta el tipo de piel y la afección a tratar, con el objetivo de ofrecer productos de alta calidad, seguridad y resultados confiables , para cada situación especifica . "    ],
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuC5ncRU4MlUyWMWa90WgY-Q4gwAQxbywH870hprtd4lhczbkq3USNiB06Oag1WOH9smdL_Ws6fSJ0_3Bp9thSs-nYCYl0V2eEoRYdD5_k8MLpYo78UZfzaGFL1KcSpiKEEHDNVLiuJaSRxvNicGaQB1WTJ-OfQbtW90_C6KM6w9sE1qpESwMOSTPETqNN4TWPXDMZLmkBS-24AxR-hKuh7vDG07M-0MNo4J_WKwx-NamAD56pQqu5pxCtwHBFLDyUAG7UIZ59uGzAsf",
     alt: "Suplementos",
@@ -42,12 +31,12 @@ const especialidades = [
     reverse: true,
   },
   {
-    eyebrow: "Extractos Naturales",
-    title: "Fitoterápicos",
+    eyebrow: "",
+    title: "Suplementos y Nutracéuticos",
     text: [
-      "Unimos la sabiduría de la naturaleza con el rigor de la farmacia moderna mediante extractos de alta calidad.",
-      "Preparaciones: tinturas madre, cápsulas de extractos secos y aceites esenciales para uso terapéutico.",
-    ],
+"Los suplementos nutricionales son un apoyo fundamental para complementar la alimentación y contribuir al bienestar general del organismo. En Farmacia Fiorilli JR ofrecemos asesoramiento personalizado para ayudarte a elegir las opciones más adecuadas según tus objetivos y necesidades.",
+"Contamos con una amplia variedad de suplementos que pueden contribuir al aporte de vitaminas, minerales, proteínas y otros nutrientes esenciales, especialmente en situaciones de desgaste físico, estrés, requerimientos específicos o estilos de vida exigentes.",
+"Cada recomendación se realiza de forma individual, considerando el estado de salud, la dieta y los objetivos de cada persona, con el fin de promover un uso responsable, seguro y eficaz.",    ],
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuC5jDIUCo0P5XgNEU3Kn8OB_vfW0YQQ8QnIHcs_75DSgnCwdDo0P8ge-neJ0kkyNRxoyn8Uzuz_zNu1ThncbIatgJmPAiHIidam0gC6c-5HkCfyR9hwfPlTRlWj6XFzOsSaHsoZn9hrVs3VNWCu-CiyUOCJSsDsRTo0xjpgfoyrBTqm1WWrynO4kGUTlvMzZdVMgEAh77oxLFEINdLeUMMdVXjpsSDBYssp3HY9ENZlB-dtHnJdp3WF-HyM9QtN1h3gcnAZF0tYc5rh",
     alt: "Fitoterapia",
@@ -55,11 +44,41 @@ const especialidades = [
     reverse: false,
   },
   {
-    eyebrow: "Cuidado Animal",
-    title: "Veterinarios",
+    eyebrow: "",
+    title: "Fertilidad",
     text: [
       "Adaptamos preparados a las necesidades de las mascotas, facilitando la administración y ajustando dosis según el peso del animal.",
       "Opciones: pastas orales saborizadas, soluciones transdérmicas y cápsulas de tamaño reducido.",
+    ],
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuDYOlEcAzZXX8r8M9Vn4Ie6L_MoJ4Nov7o8L4IMMg_vrrpSrckotg5bE1p1pEIiD-adpHkFA30WmwcRkWd9qGOpd4zCWPYxk3O9Game4uoDK8O_Mp5w6bI77G-Mp6YWGdd5uuPvN-hsrJgmzQlzEqKoyiObpiwhQVVx9Up1Uvv3fwrzfGR-lJ5rP1OQcpxPj_FimwBH4c8-fwBQo5EUGcyy3TOo7wmL-aWaoL3dzO8Npq5b9R97mgDO1y0-HRTSHbgGb2O2UN9zv_Cy",
+    alt: "Veterinarios",
+    variant: "soft",
+    reverse: true,
+  },
+    {
+    eyebrow: "",
+    title: "Fototrópicos",
+    text: [
+"La naturaleza nos brinda una valiosa fuente de productos medicinales que utilizamos para elaborar nuestras fórmulas magistrales, con el objetivo de ofrecer el mejor tratamiento posible y contribuir al cuidado de la salud.",
+"Los componentes de estas formulaciones provienen de extractos vegetales con certificación de calidad, cuidadosamente seleccionados por su eficacia y seguridad. En muchos casos, los tratamientos de origen natural presentan una muy buena tolerancia y una baja incidencia de efectos adversos, lo que los convierte en una alternativa terapéutica a considerar frente a distintas necesidades.",
+"Asimismo, la medicina de origen natural puede complementar e incluso, en determinadas situaciones, según cada caso particular. De este modo, se ofrecen alternativas personalizadas que se adaptan a cada paciente, favoreciendo un abordaje integral y con un buen perfil de tolerancia.",
+"Estas preparaciones pueden elaborarse en distintas formas farmacéuticas, según la necesidad terapéutica y la comodidad del paciente, tales como cápsulas, gotas medicinales, tisanas o mezclas herbales, extractos vegetales, comprimidos y polvos.",
+"Estas preparaciones pueden elaborarse en distintas formas farmacéuticas, según la necesidad terapéutica y la comodidad del paciente, tales como cápsulas, gotas medicinales, tisanas o mezclas herbales, extractos vegetales, comprimidos y polvos.",    ],
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuDYOlEcAzZXX8r8M9Vn4Ie6L_MoJ4Nov7o8L4IMMg_vrrpSrckotg5bE1p1pEIiD-adpHkFA30WmwcRkWd9qGOpd4zCWPYxk3O9Game4uoDK8O_Mp5w6bI77G-Mp6YWGdd5uuPvN-hsrJgmzQlzEqKoyiObpiwhQVVx9Up1Uvv3fwrzfGR-lJ5rP1OQcpxPj_FimwBH4c8-fwBQo5EUGcyy3TOo7wmL-aWaoL3dzO8Npq5b9R97mgDO1y0-HRTSHbgGb2O2UN9zv_Cy",
+    alt: "Veterinarios",
+    variant: "soft",
+    reverse: true,
+  },
+      {
+    eyebrow: "",
+    title: "Veterinarios",
+    text: [
+"Es importante recordar que, para brindar el mejor cuidado posible a las mascotas, estas deben recibir una atención farmacoterapéutica de la más alta calidad.",
+"Si bien los medicamentos industriales cubren un amplio espectro de patologías, existen situaciones particulares en las que resulta necesario recurrir a la formulación magistral veterinaria. La individualización del tratamiento permite adaptar la terapia a las necesidades específicas de cada animal, optimizando su eficacia y seguridad.",
+"Entre los beneficios de esta personalización se incluyen el ajuste preciso de la dosis, la modificación de excipientes, la mejora de las características organolépticas para facilitar la administración, así como la posibilidad de tratar patologías sin alternativas comerciales disponibles o de emplear formas farmacéuticas más adecuadas para cada caso.",
+"Estos preparados se elaboran con dosis ajustadas según el peso, la especie y la edad del animal, garantizando un tratamiento más preciso, seguro y adaptado a sus requerimientos particulares.",
     ],
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuDYOlEcAzZXX8r8M9Vn4Ie6L_MoJ4Nov7o8L4IMMg_vrrpSrckotg5bE1p1pEIiD-adpHkFA30WmwcRkWd9qGOpd4zCWPYxk3O9Game4uoDK8O_Mp5w6bI77G-Mp6YWGdd5uuPvN-hsrJgmzQlzEqKoyiObpiwhQVVx9Up1Uvv3fwrzfGR-lJ5rP1OQcpxPj_FimwBH4c8-fwBQo5EUGcyy3TOo7wmL-aWaoL3dzO8Npq5b9R97mgDO1y0-HRTSHbgGb2O2UN9zv_Cy",
