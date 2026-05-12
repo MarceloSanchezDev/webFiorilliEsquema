@@ -318,9 +318,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-<section>
-  <EspecialidadesInfo></EspecialidadesInfo>
-</section>
+
+      <EspecialidadesInfo></EspecialidadesInfo>
+
       <section class="horarios-section">
         <div class="horarios-overlay"></div>
 

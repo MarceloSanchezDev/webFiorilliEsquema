@@ -236,7 +236,7 @@ Preparado únicamente para uso externo. `,
     nombre: "Spray Repelente De Insectos",
     img: ["1.jpg", "2.jpg", "3.jpg"],
     compo:
-      "Rp/ dietiltoluamida 25% ; Ac Citronella 2.5 %; exp (glicerina,alcohol ) csp 100 m",
+      "Rp/ dietiltoluamida 25% ; Ac Citronella 2.5 %; exp (glicerina,alcohol ) csp 100 ml",
     uso: `Antes de aplicar el repelente, la  piel debe estar  limpia y seca. Agita bien el envase y rocía el producto a una distancia adecuada (entre 10 y 15 cm) sobre las zonas expuestas del cuerpo. Evita aplicar directamente en el rostro: en su lugar, rocía un poco en tus manos y luego distribúyelo con cuidado, evitando el contacto con ojos, boca y mucosas.
 No uses una cantidad excesiva; una capa ligera es suficiente para que el producto sea efectivo. Tampoco lo apliques sobre heridas, irritaciones o piel dañada. Si estás usando protector solar, primero aplica el protector, deja que se absorba y luego coloca el repelente.`,
     recomendaciones: `Evita aplicar directamente en el rostro: en su lugar, rocía un poco en tus manos y luego distribúyelo con cuidado, evitando el contacto con ojos, boca y mucosas.
@@ -532,7 +532,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
     nombre: "Cápsulas de ashwagandha",
     img: ["1.jpg", "2.jpg", "3.jpg"],
     compo:
-      "Extracto seco de ashwagandha de león 300 mg  ; excipientes  csp 50 capsulas ",
+      "Rp/ Extracto seco de ashwagandha 300 mg  ; excipientes csp 50 capsulas ",
     uso: `La dosis indicada es de 1 o 2 capsulas por día ,según la indicación médica. Para mejorar su absorción, se recomienda tomar las cápsulas antes  de acostarse para potenciar el efecto sedante  y la conciliación del sueño  , después de las comidas `,
     recomendaciones: `Las capsulas deben guardarse en un lugar seco, fresco y alejado de la luz solar directa. La humedad y el calor pueden alterar la estructura de la cápsula o degradar el principio activo , se recomienda conservarlas entre 15 °C y 25 °C, a menos que el envase indique lo contrario. Mantener las cápsulas siempre en su envase original, bien cerrado, para evitar contaminación, exposición al aire o confusión con otros medicamentos. Es importante no tocar las cápsulas con las manos sucias o mojadas, ya que la humedad puede dañarlas. Deben mantenerse fuera del alcance de los niños: para evitar ingestas accidentales. `,
     beneficios: [
