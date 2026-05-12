@@ -3,19 +3,6 @@ import "./Especialidades.css";
 
 const especialidades = [
   {
-    eyebrow: "Cuidado Ocular",
-    title: "Oftalmología",
-    text: [
-      "Desarrollamos preparaciones estériles de alta precisión para el tratamiento de patologías oculares complejas, garantizando la isotonicidad y el pH exacto requerido por el globo ocular.",
-      "Preparaciones comunes: colirios fortificados, suero autólogo, pomadas oftálmicas sin conservantes y soluciones para uso oftalmológico.",
-    ],
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBAGi3LwhtOwfXrZTgh9Ar6yGLJ2upM7HDgyIsetCEEDwFWwUc71uCRLaDs5cDnrZEdkEUfSBuA0zjVsVY0UO3_jqyWjeA557ZnUzf5tEE9j7_NcgFoBRXCxDIasMZAic9wBVCNuFBmcQ26PkiVp9i6iu-gfJgyN8fI8ktsOa7gLDCY7IiEgkwqCO1XCkOQQ1fYqQcnWSSXJSbk2hN72dm98X0s8d9TTwNbVcmGxrFz3mQv5gYrzJdRrAqbr3PT6GNKQ6S5sOjesTKw",
-    alt: "Oftalmología",
-    variant: "light",
-    reverse: false,
-  },
-  {
     eyebrow: "Dosis Infantiles",
     title: "Pediatría",
     text: [
@@ -87,18 +74,31 @@ export default function Especialidades() {
     <main className="specialties-main">
       <header className="specialties-hero">
         <div className="specialties-hero-content">
-          <span className="specialties-label">Especialidades Magistrales</span>
+          <span className="specialties-label">Precisión científica </span>
 
           <h1 className="specialties-title">
-            Precisión científica <br />
-            <span>cuidado personalizado</span>
+            Formulas Magistrales
           </h1>
 
           <p className="specialties-description">
-            Transformamos la prescripción médica en soluciones farmacéuticas
-            personalizadas, elaboradas con criterio profesional, calidad y
-            seguimiento farmacéutico.
+            Es todo medicamento prescripto en una receta magistral para un paciente individualizado, posteriormente preparado, envasado y rotulado por un farmacéutico en el laboratorio de su farmacia y dispensado en la misma.
+            La Formulación Magistral permite individualizar el tratamiento, de esta manera el medicamento se adapta al paciente y a sus necesidades fisiopatológicas particulares, lo que aporta valiosas herramientas terapéuticas como:
           </p>
+          <ul className="especialidades-puntos">
+            <li>La adaptación precisa de las dosis
+            </li>
+            <li>El diseño individualizado del vehículo
+            </li>
+            <li>Forma farmacéutica que mejor se ajuste a las necesidades del paciente
+            </li>
+            <li>Evitar la incorporación de determinados excipientes que puedan generar alergias o intolerancia
+            </li>
+            <li>Flexibilidad en el tratamiento.
+            </li>
+          </ul>
+          <p class="specialties-description">
+            Los tratamientos se caracterizan por la participación multidisciplinaria entre médico, farmacéutico y paciente, esta interacción se basa en la necesidad y derecho del paciente a una atención sanitaria particular, pues muchos de ellos son considerados «casos únicos».
+            Es importante resaltar que este tipo de medicamentos se preparan con ingredientes farmacéuticos activos de calidad certificada, siguiendo las normas de correcta elaboración y control de calidad establecidas al efecto y según las directrices de la legislación vigente.</p>
         </div>
       </header>
 
@@ -138,9 +138,8 @@ function EspecialidadSection({
   return (
     <section className={`specialty-section specialty-section-${variant}`}>
       <div
-        className={`specialty-container ${
-          reverse ? "specialty-container-reverse" : ""
-        }`}
+        className={`specialty-container ${reverse ? "specialty-container-reverse" : ""
+          }`}
       >
         <div className="specialty-text">
           <span className="specialty-eyebrow">{eyebrow}</span>

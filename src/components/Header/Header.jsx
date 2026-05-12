@@ -56,6 +56,8 @@ export default function Header() {
                 <Link to={"/"}>Inicio</Link>
                 <Link to={"/preparados"}>Preparados</Link>
                 <Link to={"/quienesSomos"}>Quiénes Somos</Link>
+
+                <Link to={"/especialidades"}>Especialidades</Link>
                 <Link to={"/FAQ"}>Recomendaciones</Link>
               </div>
             </div>
@@ -78,6 +80,8 @@ export default function Header() {
             <Link to={"/"}>Inicio</Link>
             <Link to={"/preparados"}>Preparados</Link>
             <Link to={"/quienesSomos"}>Quiénes Somos</Link>
+            <Link to={"/especialidades"}>Especialidades</Link>
+
             <Link to={"/FAQ"}>Recomendaciones</Link>
           </div>
           {/*
