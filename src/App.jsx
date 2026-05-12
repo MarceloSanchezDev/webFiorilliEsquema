@@ -382,8 +382,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
     compo:
       "Hisopo 15 % ,Fucus 20 % , sen 10  % ,cola de caballo 20 % , Apio 15 %   Cedrón 15 %  Anis 15 %    25 g ",
     uso: `Tomar una cantidad de la mezcla herbal   ( 1 cuchara de tè) y agréguele agua hirviendo  y dejar reposar por  10 /15 min , consumir 3 a 4 veces por día`,
-    recomendaciones: `Se recomienda aplicar la pomada antes de acostarse, para que actúe durante más tiempo sin ser removida por lavados o contacto con objetos. Finalmente, lava bien tus manos después de la aplicación para evitar la transmisión de la infección a otras áreas del cuerpo o a otras personas. Preparado indicado únicamente para uso externo 
-`,
+    recomendaciones: `-`,
     beneficios: [
       "Ayudan a eliminar la retención de líquidos, reduciendo la hinchazón.",
       "Aportan una sensación de saciedad , para  reducir la ingesta de alimentos.",
@@ -397,15 +396,14 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
     categoria: "Productos de origen natural",
     nombre: "Tisana Antidiabetica",
     img: ["1.jpg", "2.jpg", "3.jpg"],
-    compo: "Rp/ BIFONAZOL 2%; Unguento para los hongos de las uñas csp 20 g",
-    uso: `Lavar y secar bien las uñas afectadas con agua y jabón antes de aplicar el ungüento. Si la uña está muy engrosada, puedes limarla suavemente para facilitar la penetración de la pomada . Luego, aplica una capa fina del ungüento cubriendo toda la superficie de la uña afectada . `,
-    recomendaciones: `Se recomienda aplicar la pomada antes de acostarse, para que actúe durante más tiempo sin ser removida por lavados o contacto con objetos. Finalmente, lava bien tus manos después de la aplicación para evitar la transmisión de la infección a otras áreas del cuerpo o a otras personas. Preparado indicado únicamente para uso externo 
-`,
+    compo: "Pezuña de vaca 20%,Sarandi 20% Ortiga 20% Poleo csp 25 g",
+    uso: `Se recomienda usar entre 1  a 2  gramos de hierba (una cucharada de té) por cada 100-200 ml de agua hirviendo dejar reposar por 10 min . Se recomienda tomar entre 1 a 3  tazas por día  . `,
+    recomendaciones: `-`,
     beneficios: [
-      "Devuelve la textura, dureza y coloración normal a la lámina de la uña.",
-      "Ayuda a eliminar el mal olor, la picazón y el despellejamiento de la piel .",
-      "Se aplica solo una vez al día, preferentemente por la noche, preferiblemente sobre la uña limpia y lijada.",
-      "Penetra en la uña para atacar el hongo, promoviendo el crecimiento de una uña sana.",
+      "Ayuda a mejorar la sensibilidad a la insulina y reducir los niveles de azúcar en sangre en ayunas",
+      "Efecto Hipoglucemiante .",
+      "Alternativa natural para el tratamiento de la prediabetes.",
+      "Efecto Antioxidante y depurativo.",
     ],
     receta: false,
     video: false,
@@ -415,14 +413,13 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
     nombre: "Tisana Antihipertensiva",
     img: ["1.jpg", "2.jpg", "3.jpg"],
     compo: "Rp/ BIFONAZOL 2%; Unguento para los hongos de las uñas csp 20 g",
-    uso: `Lavar y secar bien las uñas afectadas con agua y jabón antes de aplicar el ungüento. Si la uña está muy engrosada, puedes limarla suavemente para facilitar la penetración de la pomada . Luego, aplica una capa fina del ungüento cubriendo toda la superficie de la uña afectada . `,
-    recomendaciones: `Se recomienda aplicar la pomada antes de acostarse, para que actúe durante más tiempo sin ser removida por lavados o contacto con objetos. Finalmente, lava bien tus manos después de la aplicación para evitar la transmisión de la infección a otras áreas del cuerpo o a otras personas. Preparado indicado únicamente para uso externo 
-`,
+    uso: `Se recomienda usar entre 1  a 2  gramos de hierba (una cucharada de té) por cada 100-200 ml de agua hirviendo dejar reposar por 10 min . Se recomienda tomar entre 1 a 3  tazas por día . `,
+    recomendaciones: `-`,
     beneficios: [
-      "Devuelve la textura, dureza y coloración normal a la lámina de la uña.",
-      "Ayuda a eliminar el mal olor, la picazón y el despellejamiento de la piel .",
-      "Se aplica solo una vez al día, preferentemente por la noche, preferiblemente sobre la uña limpia y lijada.",
-      "Penetra en la uña para atacar el hongo, promoviendo el crecimiento de una uña sana.",
+      "Ayuda a Regular la presion arterial.",
+      "Accion diuretica.",
+      "Efecto vasodilatador.",
+      "Producto 100% de origen natural.",
     ],
     receta: false,
     video: false,
@@ -434,7 +431,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
     compo:
       "Fresno 10% , Sause c nacional 10%,Diente de Leon 10%,  Ortiga 10 % ,Jarilla hojas 10%",
     uso: `Tomar una cantidad de la tisana   ( 1 cuchara de tè) y agréguele agua hirviendo  y dejar reposar por  10 /15 min , consumir 3 a 4 veces por día.`,
-    recomendaciones: ``,
+    recomendaciones: `-`,
     beneficios: [
       "Reducción de la inflamación",
       "Alivio del dolor articular y dolores  crónicos y articulares, siendo eficaz en casos de artritis reumatoide.",
@@ -450,7 +447,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
     img: ["1.jpg", "2.jpg", "3.jpg"],
     compo: "Pulmonaria 30 % ,Ambay 20 % ,Anacahuita 20 % ,Llanten csp 250 g",
     uso: `Tomar una cantidad de la mezcla herbal   ( 1 cuchara de tè) y agréguele agua hirviendo  y dejar reposar por  10 /15 min , consumir 3 a 4 veces por día.`,
-    recomendaciones: ``,
+    recomendaciones: `-`,
     beneficios: [
       "Acción Expectorante: Ayuda a eliminar el exceso de flema en las vías respiratorias.",
       "Efecto Antiséptico y Balsámico: Alivia la garganta y las molestias del tracto respiratorio superior.",
@@ -484,7 +481,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
     compo:
       "Manzanilla 20%,Yerba de Pollo 20% ,Poleo Hojas 20 %, Menta Hojas 20%,Peperina Hojas csp 250 g",
     uso: `Tomar una cantidad de la mezcla herbal   ( 1 cuchara de tè) y agréguele agua hirviendo  y dejar reposar por  10 /15 min 1 taza despues de las comidas principales.`,
-    recomendaciones: "",
+    recomendaciones: "-",
     beneficios: [
       "Ayuda a procesar alimentos pesados y a metabolizar grasas, reduciendo la sensación de pesades estomacal .",
       "Relaja el tracto digestivo, aliviando cólicos y espasmos.",
@@ -501,7 +498,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
     compo:
       "Sen 20%, Zaragatona Rubia 20% Manzanilla 20% Diente de León csp 25 g",
     uso: `Tomar una cantidad de la  tisana   ( 1 cuchara de tè) y agréguele agua hirviendo  y dejar reposar por  10 /15 min , consumir 3 a 4 veces por día.`,
-    recomendaciones: ``,
+    recomendaciones: `-`,
     beneficios: [
       "Activa el tránsito intestinal, facilitando la evacuación en casos de estreñimiento ocasional.",
       "Aumenta el contenido de agua en el intestino, lo que ayuda a que el proceso de defecación sea menos doloroso.",
@@ -517,7 +514,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
     img: ["1.jpg", "2.jpg", "3.jpg"],
     compo: "Pasionaria 20% ; Melisa 20% ; Tilo csp 25 g ",
     uso: `Tomar una cantidad de la mezcla herbal   ( 1 cuchara de tè) y agréguele agua hirviendo  y dejar reposar por  10 /15 min , consumir 3 a 4 veces por día `,
-    recomendaciones: ``,
+    recomendaciones: `-`,
     beneficios: [
       "Reducción de la ansiedad y el estrés",
       "Mejora de la calidad del sueño ",
