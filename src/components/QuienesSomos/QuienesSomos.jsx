@@ -341,6 +341,7 @@ export default function QuienesSomos() {
           </div>
         </div>
       </section>
+      {/*
 
       <section className="team-section">
         <div className="container">
@@ -380,23 +381,8 @@ export default function QuienesSomos() {
           </div>
         </div>
       </section>
+*/}
 
-      <section className="about-cta-section">
-        <div className="about-cta-pattern"></div>
-
-        <div className="container about-cta-content">
-          <h2>¿Necesitas una fórmula a medida?</h2>
-          <p>
-            Nuestro equipo está listo para colaborar con tu médico y crear el
-            tratamiento exacto que tu salud requiere.
-          </p>
-
-          <div className="about-cta-actions">
-            <Button variant="secondary">Consultar Disponibilidad</Button>
-            <Button variant="outline-light">Hablar con un Farmacéutico</Button>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }
