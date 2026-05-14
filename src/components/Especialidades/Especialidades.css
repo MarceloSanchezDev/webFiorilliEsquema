@@ -2,6 +2,14 @@
   padding-top: 6rem;
   background: #f8fafa;
 }
+.especialidades-title{
+  font-size: 3.7rem;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.05em;
+  color: #1b7f3f;
+  margin: 0 0 1.5rem 0;
+}
 .especialidades-puntos{
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -37,7 +45,7 @@
 .specialties-label,
 .specialty-eyebrow {
   display: block;
-  color: #005a9c;
+  color: #1b7f3f;
   font-size: 0.85rem;
   font-weight: 800;
   letter-spacing: 0.18em;
@@ -50,7 +58,7 @@
   font-weight: 900;
   line-height: 1.1;
   letter-spacing: -0.05em;
-  color: #004275;
+  color: #1b7f3f;
   margin: 0 0 1.5rem 0;
 }
 
@@ -99,7 +107,7 @@
 .specialty-text h2 {
   font-size: 2.7rem;
   font-weight: 800;
-  color: #004275;
+  color: #1b7f3f;
   margin: 0 0 1.5rem 0;
   letter-spacing: -0.03em;
 }
@@ -129,7 +137,7 @@
 
 /* CTA */
 .specialties-cta {
-  background: #005a9c;
+  background: #1b7f3f;
   padding: 7rem 2rem;
   text-align: center;
 }
