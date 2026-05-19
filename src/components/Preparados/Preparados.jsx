@@ -39,14 +39,20 @@ const processSteps = [
 export default function Preparados({ products }) {
   const [filter, setFilter] = useState("");
   const [categories, setCategories] = useState([
-    { label: "Skin Care", active: true },
+    { label: "Todos", active: true },
+    { label: "Skin Care", active: false },
     { label: "Medicamentos de uso topico", active: false },
     { label: "Productos de origen natural", active: false },
     { label: "Suplementos", active: false },
   ]);
-  const filteredProducts = products.filter(
+  let filteredProducts 
+  if (filter === "Todos") {
+    filteredProducts = products;
+  } else {
+  filteredProducts = products.filter( 
     (product) => !filter || product.categoria === filter,
   );
+  }
   useEffect(() => {
     window.scrollTo({
       top: 0,

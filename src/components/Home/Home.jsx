@@ -19,8 +19,10 @@ import "./Home.css";
 import { useEffect } from "react";
 import Videos from "../Video/Videos";
 import EspecialidadesInfo from "../EspecialidadesInfo/EspecialidadesInfo";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+  const navigate = useNavigate();
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -56,10 +58,9 @@ export default function Home() {
             </p>
 
             <div className="hero-actions">
-              <Button variant="primary" icon="arrow_forward">
+              <Button variant="primary" icon="arrow_forward" onClick={() => navigate("/preparados")}>
                 Nuestros Preparados
               </Button>
-              <Button variant="secondary">Conocer más</Button>
             </div>
           </div>
         </div>
@@ -109,7 +110,7 @@ export default function Home() {
                 text="Brindamos asesoramiento profesional, atención personalizada y acompañamiento en cada etapa del tratamiento."
                 variant="primary"
               >
-                <Button variant="light">Consultar</Button>
+                
               </InfoCard>
             </div>
 
