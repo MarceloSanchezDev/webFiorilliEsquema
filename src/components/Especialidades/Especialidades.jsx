@@ -15,10 +15,24 @@ const especialidades = [
     eyebrow: "Especialidades",
     title: "Pediátricos",
     text: [
-      "En Farmacia Fiorilli JR nos dedicamos a la elaboración de productos pediátricos, ofreciendo soluciones seguras y eficaces adaptadas a las necesidades específicas  de cada paciente. Debido a que muchos medicamentos  dentro de la industria farmacéutica  no se encuentran disponibles en presentaciones adecuadas para niños, desarrollamos fórmulas magistrales personalizadas para cada caso en específico.",
-      "Aplicaciones: tratamientos para acné, psoriasis, hiperpigmentación y formulaciones antienvejecimiento.",
-      "Elaboramos distintas formas farmacéuticas, como soluciones, suspensiones y jarabes, cápsulas, y también preparados tópicos como cremas, pomadas, ungüentos y polvos.",
-      "Cada formulación se realiza de manera individual, ajustando cuidadosamente la dosis según la edad y el peso del paciente , garantizando precisión, calidad y seguridad en cada tratamiento.",
+"En Farmacia Fiorilli JR nos dedicamos a la elaboración de productos pediátricos, ofreciendo soluciones seguras y eficaces adaptadas a las necesidades específicas de cada paciente. ",
+
+"Debido a  que muchos medicamentos  dentro de la industria farmacéutica  no se encuentran disponibles en presentaciones adecuadas para niños, desarrollamos fórmulas magistrales personalizadas para cada caso en específico.",
+    ],
+    products : [
+      "Soluciones pediátricas",
+      "Suspensiones orales",
+      "Jarabes magistrales",
+      "Cápsulas pediátricas",
+      "Geles de uso tópico",
+      "Cremas medicinales",
+      "Pomadas pediátricas",
+      "Ungüentos dermatológicos",
+      "Polvos magistrales ",
+      "Gotas orales ",
+      "Pastas tópicas",
+      "Fórmulas saborizadas personalizadas",
+
     ],
     image: pediatriocos,
     alt: "Pediátricos",
@@ -33,6 +47,24 @@ const especialidades = [
       "Elaboramos una amplia variedad de formas farmacéuticas de uso tópico, como cremas, geles, lociones, pomadas y soluciones, seleccionando de manera precisa los componentes más adecuados para cada tratamiento.",
       "Cada preparación se realiza de forma individual, teniendo en cuenta el tipo de piel y la afección a tratar, con el objetivo de ofrecer productos de alta calidad, seguridad y resultados confiables , para cada situación especifica . ",
     ],
+     products : [
+      "Cremas",
+      "Geles tópicos",
+      "Lociones capilares",
+      "Sérums dermatológicos ",
+      "Emulsiones tópicas",
+      "Pomadas magistrales",
+      "Soluciones cutáneas",
+      "Espumas dermatológicas",
+      "Máscaras faciales",
+      "Roll-ons tópicos",
+      "Ungüentos dermatológicos",
+      "Tónicos cutáneos",
+      "Exfoliantes tópicos",
+      "Cremigeles",
+      "Aceites dermatológicos",
+      "Pastas tópicas medicinales",
+    ],
     image: dermatologicos,
     alt: "Dermatológicos",
     variant: "soft",
@@ -40,11 +72,26 @@ const especialidades = [
   },
   {
     eyebrow: "Especialidades",
-    title: "Suplementos y Nutracéuticos",
+    title: "Suplementos Alimenticios",
     text: [
-      "Los suplementos nutricionales son un apoyo fundamental para complementar la alimentación y contribuir al bienestar general del organismo. En Farmacia Fiorilli JR ofrecemos asesoramiento personalizado para ayudarte a elegir las opciones más adecuadas según tus objetivos y necesidades.",
-      "Contamos con una amplia variedad de suplementos que pueden contribuir al aporte de vitaminas, minerales, proteínas y otros nutrientes esenciales, especialmente en situaciones de desgaste físico, estrés, requerimientos específicos o estilos de vida exigentes.",
-      "Cada recomendación se realiza de forma individual, considerando el estado de salud, la dieta y los objetivos de cada persona, con el fin de promover un uso responsable, seguro y eficaz.",
+"Los suplementos son un apoyo fundamental para complementar la alimentación y contribuir al bienestar general del organismo. En Farmacia Fiorilli JR ofrecemos asesoramiento personalizado para ayudarte a elegir las opciones más adecuadas según tus objetivos y necesidades.",
+
+"Contamos con una amplia variedad de suplementos que pueden contribuir al aporte de vitaminas, minerales, proteínas y otros nutrientes esenciales, especialmente en situaciones de desgaste físico, estrés, requerimientos específicos o estilos de vida exigentes.",
+"Cada recomendación se realiza de forma individual, considerando el estado de salud, la dieta y los objetivos de cada persona, con el fin de promover un uso responsable, seguro y eficaz." 
+   ],
+     products : [
+      "Cápsulas para la caída del cabello",
+      "Fórmula regeneradora para articulaciones",
+      "Complejo fortalecedor muscular y antiestrés",
+      "Cápsulas energizantes",
+      "Fórmula anticelulítica en cápsulas",
+      "Complemento antioxidante",
+      "Preparado antiedad",
+      "Suplementos para el  refuerzo inmunológico",
+      "Fórmula para mejorar el descanso",
+      "Complejo para la concentración y el rendimiento mental",
+      "Preparados nutricionales para deportistas",
+
     ],
     image: suplementos,
     alt: "Suplementos y Nutracéuticos",
@@ -53,10 +100,23 @@ const especialidades = [
   },
   {
     eyebrow: "Especialidades",
-    title: "Fertilidad",
+    title: "Fertilidad y Maternidad",
     text: [
-      "Adaptamos preparados a las necesidades de las mascotas, facilitando la administración y ajustando dosis según el peso del animal.",
-      "Opciones: pastas orales saborizadas, soluciones transdérmicas y cápsulas de tamaño reducido.",
+"Los preparados magistrales permiten acompañar de manera personalizada las distintas etapas de la fertilidad, el embarazo y la maternidad. Cada tratamiento puede adaptarse específicamente a las necesidades de la paciente, ajustando dosis, combinaciones y formas farmacéuticas para lograr una mejor tolerancia y adherencia terapéutica.",   
+    ],
+     products : [
+      "Óvulos de progesterona",
+      "Cremas hormonales transdérmicas",
+      "Cápsulas de mioinositol y ácido fólico",
+      "Soluciones orales vitamínicas prenatales",
+      "Cápsulas de omega 3",
+      "Fórmulas magistrales para náuseas del embarazo",
+      "Cápsulas de hierro y minerales personalizados",
+      "Suplementos hormonales individualizados",
+      "Lociones tópicas para prevención de estrías",
+      "Cápsulas de magnesio y calcio",
+      "Preparados galénicos para lactancia y bienestar materno",
+
     ],
     image: fertilidad,
     alt: "Fertilidad",
@@ -65,12 +125,41 @@ const especialidades = [
   },
   {
     eyebrow: "Especialidades",
-    title: "Climaterio, menopausia y sexualidad",
+    title: "Preparados Fitoterapéuticos",
     text: [
-      "La naturaleza nos brinda una valiosa fuente de productos medicinales que utilizamos para elaborar nuestras fórmulas magistrales, con el objetivo de ofrecer el mejor tratamiento posible y contribuir al cuidado de la salud.",
-      "Los componentes de estas formulaciones provienen de extractos vegetales con certificación de calidad, cuidadosamente seleccionados por su eficacia y seguridad. En muchos casos, los tratamientos de origen natural presentan una muy buena tolerancia y una baja incidencia de efectos adversos, lo que los convierte en una alternativa terapéutica a considerar frente a distintas necesidades.",
-      "Asimismo, la medicina de origen natural puede complementar e incluso, en determinadas situaciones, según cada caso particular. De este modo, se ofrecen alternativas personalizadas que se adaptan a cada paciente, favoreciendo un abordaje integral y con un buen perfil de tolerancia.",
-      "Estas preparaciones pueden elaborarse en distintas formas farmacéuticas, según la necesidad terapéutica y la comodidad del paciente, tales como cápsulas, gotas medicinales, tisanas o mezclas herbales, extractos vegetales, comprimidos y polvos.",
+"Los preparados magistrales de origen natural representan una alternativa terapéutica personalizada, elaborada a partir de extractos vegetales y componentes seleccionados por su calidad, seguridad y eficacia. Gracias a la formulación individualizada, es posible adaptar cada preparación a las necesidades específicas de cada paciente, ajustando dosis, combinaciones y formas farmacéuticas según cada tratamiento.",
+"Los productos naturales se destacan por su buena tolerancia y por presentar, en muchos casos, una menor incidencia de efectos adversos, convirtiéndose en una opción complementaria dentro de distintos abordajes médicos. Además, permiten ofrecer terapias más flexibles y adaptadas a quienes buscan alternativas medicinales de origen natural para el cuidado integral de la salud.",
+"Estas formulaciones pueden elaborarse en diferentes presentaciones, como cápsulas, gotas medicinales, tisanas, extractos vegetales, comprimidos o polvos, brindando soluciones terapéuticas prácticas, seguras e individualizadas.",    ],
+     products : [
+      "INMUNOESTIMULANTES",
+      "FORTALECEDORES DE MUSCULOS Y ARTICULACIONES",
+      "REGENERADORES DE HUESO",
+      "ANTIOXIDANTES",
+      "SEDANTES",
+      "CONCENTRACIÓN",
+      "ANTIDEPRESIVOS",
+      "ESTROGÉNICAS",
+      "TRANQUILIZANTES",
+      "ENERGIZANTES",
+      "METABÓLICAS",
+      "TISANA SEDANTE ",
+      "TISANA ANTIACIDA",
+      "TISANA BRONQUIAL ",
+      "TISANA CIRCULATORIA",
+      "TISANA HEPATICA",
+      "TISANA DIURETICA",
+      "TISANA ANTIHIPERTENSIVA ",
+      "TISANA ANTIRREUMATICA",
+      "TISANA ADELGAZANTE",
+      "TISANA LAXANTE",
+      "HIERBAS VEGETALES",
+      "GOTAS SEDANTES",
+      "GOTAS CIRCULATORIAS",
+      "GOTAS HEPATICAS",
+      "GOTAS INMUNOESTIMULANTES",
+      "GOTAS DEPURATIVAS ANTIOXIDANTES",
+      "FLORES DE BACH",
+
     ],
     image: menopausia,
     alt: "Climaterio, menopausia y sexualidad",
@@ -85,6 +174,20 @@ const especialidades = [
       "Si bien los medicamentos industriales cubren un amplio espectro de patologías, existen situaciones particulares en las que resulta necesario recurrir a la formulación magistral veterinaria. La individualización del tratamiento permite adaptar la terapia a las necesidades específicas de cada animal, optimizando su eficacia y seguridad.",
       "Entre los beneficios de esta personalización se incluyen el ajuste preciso de la dosis, la modificación de excipientes, la mejora de las características organolépticas para facilitar la administración, así como la posibilidad de tratar patologías sin alternativas comerciales disponibles o de emplear formas farmacéuticas más adecuadas para cada caso.",
       "Estos preparados se elaboran con dosis ajustadas según el peso, la especie y la edad del animal, garantizando un tratamiento más preciso, seguro y adaptado a sus requerimientos particulares.",
+    ],
+     products : [
+      "Soluciones orales veterinarias",
+      "Cápsulas veterinarias ",
+      "Cremas tópicas",
+      "Pomadas medicinales",
+      "Ungüentos dermatológicos",
+      "Polvos de uso veterinario",
+      "Geles óticos",
+      "Lociones tópicas",
+      "Pastas orales",
+      "Shampoos terapéuticos",
+      "Suplementos nutricionales",
+
     ],
     image: veterinarios,
     alt: "Veterinarios",
@@ -172,6 +275,7 @@ function EspecialidadSection({
   eyebrow,
   title,
   text,
+  products,
   image,
   alt,
   variant = "light",
@@ -194,10 +298,16 @@ function EspecialidadSection({
               <p key={index}>{paragraph}</p>
             ))}
           </div>
+          <ul className="specialty-capsules">
+  {products.map((paragraph, index) => (
+    <li className="specialty-capsule" key={index}>
+      <span className="specialty-capsule-icon">✓</span>
+      <span>{paragraph}</span>
+    </li>
+  ))}
+</ul>
 
-          <Button variant={variant === "soft" ? "secondary" : "primary"}>
-            Consultar Especialidad
-          </Button>
+          
         </div>
 
         <div className="specialty-media">
