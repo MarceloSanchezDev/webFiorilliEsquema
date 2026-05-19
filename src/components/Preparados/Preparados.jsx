@@ -99,9 +99,7 @@ export default function Preparados({ products }) {
                 ))}
               </div>
             </div>
-            <div className="width-100 flex center preparados-advice-card">
-              <img src={rf} alt="Rutina Facial" className="" />
-            </div>
+
           </aside>
           {filteredProducts.length > 0 ? (
             <div className="preparados-products">

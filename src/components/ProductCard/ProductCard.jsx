@@ -24,7 +24,7 @@ export default function ProductCard({
       <h3 className="product-card-title">{title}</h3>
 
       <div className="product-card-principles">
-        <span className="product-card-principles-label">Principios:</span>
+        <span className="product-card-principles-label">Beneficios:</span>
 
         <div className="product-card-tags">
           {principles.map((item) => (
