@@ -6,10 +6,13 @@ import StatCard from "../StatCard/StatCard";
 import FeatureCard from "../FeatureCard/FeatureCard";
 import TeamMemberCard from "../TeamMemberCard/TeamMemberCard";
 import "./QuienesSomos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import vacunacion from "../../assets/vacunacion.png";
 import Videos from "../Video/Videos";
 
 export default function QuienesSomos() {
+    const [openHistory, setOpenHistory] = useState(false);
+
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -71,276 +74,222 @@ export default function QuienesSomos() {
           </div>
         </div>
       </section>
+<section className="about-history-section">
+      <div className="container">
+        <div className="about-history-header">
+          <span className="section-kicker">Nuestra historia</span>
+          <h2>Farmacia Fiorilli JR</h2>
+          <p>
+            Conocé nuestra trayectoria, misión, compromiso y filosofía de trabajo,
+            basada en la atención personalizada, la calidad y la vocación de servicio.
+          </p>
+        </div>
 
-      <section className="about-history-section">
-        <div className="container">
-          <div className="about-history-grid">
-            <div className="history-large">
-              <FeatureCard
-                title="Nuestra Trayectoria"
-                variant="light"
-                className="history-card"
-              >
-                <span className="material-symbols-outlined history-watermark">
-                  history_edu
-                </span>
-                <div>
-                  <p className="feature-card-text">
-                    La <em>Farmacia Fiorilli JR</em> fue fundada el lunes 8 de
-                    enero de 1996 como una pequeña empresa familiar. Surgió como
-                    sociedad entre la farmacéutica Mónica Beatriz Fiorilli y el
-                    señor Raúl Jacquet. Desde sus inicios, el establecimiento,
-                    ubicado en la calle Curutchet 2418, operó bajo el nombre de
-                    <em>Farmacia JR</em>, con el señor Raúl Alejandro Jacquet
-                    —esposo de la farmacéutica— desempeñándose como gerente
-                    general.
-                  </p>
-                  <p className="feature-card-text">
-                    Desde el comienzo, la farmacia se destacó por ofrecer una
-                    atención personalizada de excelencia, junto con la
-                    elaboración de preparados magistrales individualizados,
-                    cumpliendo siempre con los más altos estándares de calidad y
-                    seguridad. También se caracterizó por ofrecer precios
-                    accesibles y una amplia variedad de servicios farmacéuticos,
-                    como toma de presión arterial, asesoramiento sobre control
-                    de glucemia y atención a obras sociales.
-                  </p>
-                  <p className="feature-card-text">
-                    A lo largo de su trayectoria, la farmacia ha evolucionado
-                    constantemente, incorporando nuevas tecnologías, técnicas
-                    actualizadas en el ámbito de la salud y profesionales
-                    altamente capacitados. Todo ello con el objetivo de seguir
-                    creciendo y mejorando tanto la calidad de atención como los
-                    servicios brindados.
-                  </p>
-                  <p className="feature-card-text">
-                    En marzo de 2017, la farmacéutica Mónica Beatriz Fiorilli
-                    asumió el cargo de directora técnica y el establecimiento
-                    pasó a denominarse <em>Farmacia Fiorilli JR</em>. Ese mismo
-                    año, la Dra. Fiorilli se incorporó al consejo directivo de
-                    la filial Castelar, Ituzaingó y Morón del Colegio de
-                    Farmacéuticos, cargo que continúa ejerciendo en la
-                    actualidad , manteniendo siempre una cordial relación entre
-                    la
-                    <em>Farmacia Fiorilli JR</em> y el colegio de farmacéuticos
-                    de Morón .
-                  </p>
-                  <p className="feature-card-text">
-                    En 2022, la farmacia dio un paso más en su compromiso con la
-                    comunidad, convirtiéndose en <em>farmacia escuela</em>.
-                    Desde entonces, colabora activamente en la formación de
-                    futuros profesionales de la salud, brindando capacitación a
-                    estudiantes de la Universidad de Morón que cursan la materia
-                    <em>Prácticas Profesionales Externas</em>.
-                  </p>
-                  <p className="feature-card-text">
-                    Hoy, <em>Farmacia Fiorilli JR</em> continúa firmemente con
-                    su objetivo primario de ser una institución comprometida con
-                    la salud, ofreciendo productos accesibles, atención
-                    personalizada, cobertura de obras sociales y una fuerte
-                    vocación docente.
-                  </p>
-                </div>
-              </FeatureCard>
+        <div className="history-accordion">
+          <button
+            type="button"
+            className={`history-accordion-button ${
+              openHistory ? "active" : ""
+            }`}
+            onClick={() => setOpenHistory(!openHistory)}
+          >
+            <div className="history-accordion-title">
+              <span className="material-symbols-outlined">history_edu</span>
+              <h3>Nuestra Trayectoria</h3>
             </div>
 
-            <div className="history-small">
-              <FeatureCard
-                icon="verified"
-                title="Nuestra Misión"
-                variant="primary"
-              >
-                <div>
-                  <p className="feature-card-text">
-                    En <em>Farmacia Fiorilli JR</em> trabajamos día a día
-                    guiados por una serie de objetivos que reflejan nuestro
-                    compromiso con la salud, la calidad y la mejora continua.
-                    Estos son los pilares que orientan nuestra labor:
-                  </p>
-                  <ol>
-                    <li>
-                      <h5>Brindar atención personalizada y de calidad</h5>
-                      Atender a cada paciente de manera individual, con respeto
-                      y profesionalismo, ofreciendo soluciones adaptadas a sus
-                      necesidades.
-                    </li>
-                    <li>
-                      <h5>Garantizar productos seguros y eficaces</h5>
-                      Elaborar preparados magistrales individualizados siguiendo
-                      con estándares de calidad y seguridad establecidos en las
-                      normas de buenas practicas en farmacia.
-                    </li>
-                    <li>
-                      <h5>Ofrecer precios accesibles y equitativos</h5>
-                      Asegurar el acceso a tratamientos de calidad mediante una
-                      política de precios económicos que contemple la realidad
-                      de nuestros pacientes.
-                    </li>
-                    <li>
-                      <h5>
-                        Ampliar y mejorar nuestros servicios farmacéuticos
-                      </h5>
-                      Incluir prestaciones como toma de presión arterial,
-                      control de glucosa y atención a obras sociales, buscando
-                      siempre responder de forma integral a las necesidades de
-                      la comunidad.
-                    </li>
-                    <li>
-                      <h5>
-                        Fomentar la actualización científica y tecnológica
-                      </h5>
-                      Mantenernos al día con los avances en salud, incorporando
-                      nuevas tecnologías y métodos que optimicen nuestros
-                      procesos y servicios.
-                    </li>
-                    <li>
-                      <h5>
-                        Consolidarnos como una farmacia escuela de referencia
-                      </h5>
-                      Fortalecer nuestro rol en la formación de futuros
-                      profesionales, ofreciendo un espacio de aprendizaje
-                      práctico y comprometido con la excelencia.
-                    </li>
-                    <li>
-                      <h5>
-                        Seguir creciendo como empresa familiar e institucional
-                      </h5>
-                      Expandir nuestras capacidades sin perder nuestros valores
-                      de origen, con una visión centrada en el desarrollo
-                      sustentable, ético y humano.
-                    </li>
-                  </ol>
-                </div>
-              </FeatureCard>
+            <span className="material-symbols-outlined history-arrow">
+              expand_more
+            </span>
+          </button>
+
+          {openHistory && (
+            <div className="history-accordion-content">
+              <p>
+                La <em>Farmacia Fiorilli JR</em> fue fundada el lunes 8 de enero
+                de 1996 como una pequeña empresa familiar. Surgió como sociedad
+                entre la farmacéutica Mónica Beatriz Fiorilli y el señor Raúl
+                Jacquet. Desde sus inicios, el establecimiento, ubicado en la
+                calle Curutchet 2418, operó bajo el nombre de <em>Farmacia JR</em>,
+                con el señor Raúl Alejandro Jacquet —esposo de la farmacéutica—
+                desempeñándose como gerente general.
+              </p>
+
+              <p>
+                Desde el comienzo, la farmacia se destacó por ofrecer una atención
+                personalizada de excelencia, junto con la elaboración de preparados
+                magistrales individualizados, cumpliendo siempre con los más altos
+                estándares de calidad y seguridad. También se caracterizó por
+                ofrecer precios accesibles y una amplia variedad de servicios
+                farmacéuticos, como toma de presión arterial, asesoramiento sobre
+                control de glucemia y atención a obras sociales.
+              </p>
+
+              <p>
+                A lo largo de su trayectoria, la farmacia ha evolucionado
+                constantemente, incorporando nuevas tecnologías, técnicas
+                actualizadas en el ámbito de la salud y profesionales altamente
+                capacitados. Todo ello con el objetivo de seguir creciendo y
+                mejorando tanto la calidad de atención como los servicios brindados.
+              </p>
+
+              <p>
+                En marzo de 2017, la farmacéutica Mónica Beatriz Fiorilli asumió
+                el cargo de directora técnica y el establecimiento pasó a denominarse
+                <em> Farmacia Fiorilli JR</em>. Ese mismo año, la Dra. Fiorilli se
+                incorporó al consejo directivo de la filial Castelar, Ituzaingó y
+                Morón del Colegio de Farmacéuticos, cargo que continúa ejerciendo
+                en la actualidad, manteniendo siempre una cordial relación entre la
+                farmacia y el Colegio de Farmacéuticos de Morón.
+              </p>
+
+              <p>
+                En 2022, la farmacia dio un paso más en su compromiso con la
+                comunidad, convirtiéndose en <em>farmacia escuela</em>. Desde
+                entonces, colabora activamente en la formación de futuros
+                profesionales de la salud, brindando capacitación a estudiantes de
+                la Universidad de Morón que cursan la materia
+                <em> Prácticas Profesionales Externas</em>.
+              </p>
+
+              <p>
+                Hoy, <em>Farmacia Fiorilli JR</em> continúa firmemente con su
+                objetivo primario de ser una institución comprometida con la salud,
+                ofreciendo productos accesibles, atención personalizada, cobertura
+                de obras sociales y una fuerte vocación docente.
+              </p>
+            </div>
+          )}
+        </div>
+
+        <div className="history-card-grid">
+          <FeatureCard icon="verified" title="Nuestra Misión" variant="primary">
+            <p className="feature-card-text">
+              En <em>Farmacia Fiorilli JR</em> trabajamos día a día guiados por
+              una serie de objetivos que reflejan nuestro compromiso con la salud,
+              la calidad y la mejora continua.
+            </p>
+
+            <ul className="mission-list">
+              <li>Brindar atención personalizada y de calidad.</li>
+              <li>
+                Atender a cada paciente de manera individual, con respeto,
+                empatía y profesionalismo.
+              </li>
+              <li>Garantizar productos seguros y eficaces.</li>
+              <li>
+                Elaborar preparados magistrales individualizados siguiendo
+                estándares de calidad y seguridad.
+              </li>
+              <li>Ofrecer precios accesibles y equitativos.</li>
+              <li>Ampliar y mejorar nuestros servicios farmacéuticos.</li>
+              <li>Fomentar la actualización científica y tecnológica.</li>
+              <li>
+                Consolidarnos como una farmacia escuela de referencia.
+              </li>
+              <li>
+                Seguir creciendo como empresa familiar e institucional sin perder
+                nuestros valores de origen.
+              </li>
+            </ul>
+          </FeatureCard>
+
+          <FeatureCard title="Compromiso" icon="handshake" variant="secondary">
+            <div className="commitment-content">
+              <p className="feature-card-text">
+                En <em>Farmacia Fiorilli JR</em> estamos comprometidos en
+                acompañar a nuestros pacientes a lo largo de sus tratamientos,
+                proporcionando productos seguros y de alta calidad.
+              </p>
+
+              <p className="feature-card-text">
+                Este compromiso se sostiene en una atención personalizada, un
+                equipo de profesionales capacitados y procesos de elaboración que
+                garantizan seguridad, calidad y confiabilidad.
+              </p>
+
+              <p className="feature-card-text">
+                Constantemente incorporamos nuevas tecnologías, técnicas y
+                servicios para fortalecer nuestras capacidades y seguir ofreciendo
+                la mejor atención posible a quienes depositan su confianza en
+                nosotros.
+              </p>
+
+              <p className="feature-card-text">
+                Más allá de la dispensa de medicamentos, aspiramos a ser un
+                ejemplo en el cuidado de la salud, guiados por la excelencia, la
+                ética profesional y el compromiso genuino con nuestros pacientes.
+              </p>
+            </div>
+          </FeatureCard>
+        </div>
+
+        <div className="philosophy-card">
+          <div className="philosophy-content">
+            <div className="philosophy-title">
+              <span className="material-symbols-outlined">psychology</span>
+              <h3>Filosofía</h3>
             </div>
 
-            <div className="history-small">
-              <FeatureCard
-                title="Compromiso"
-                icon="biotech"
-                variant="secondary"
-              >
-                <div className="d-flex  flex-column flex-md-row justify-content-center align-items-center gap-4 ">
-                  <div className="d-flex flex-column flex-md-row justify-content-around align-items-center">
-                    <div>
-                      <p className="feature-card-text">
-                        En <em>Farmacia Fiorilli JR</em> estamos comprometidos
-                        en acompañar a nuestros pacientes a lo largo de sus
-                        tratamientos, proporcionando productos seguros y de alta
-                        calidad. Este compromiso se sostiene en una atención
-                        personalizada, un equipo de profesionales bien
-                        capacitados y procesos de elaboración que garantizan la
-                        máxima seguridad , calidad y confiabilidad .
-                      </p>
-                      <p className="feature-card-text">
-                        Como una institución enfocada en el crecimiento y la
-                        mejora continua de los servicios y productos prestados
-                        al público . Constantemente estamos incorporando nuevas
-                        tecnologías , técnicas , servicios , para fortalecer
-                        nuestras capacidades y seguir ofreciendo la mejor
-                        atención posible a quienes depositan su confianza en
-                        nosotros. Nuestra visión es consolidarnos como una
-                        farmacia moderna, accesible y cercana al público en
-                        general , preparada para afrontar los desafíos futuros
-                        con responsabilidad e innovación.
-                      </p>
-                      <p className="feature-card-text">
-                        Nuestros planeas a futuros están centrados en seguir
-                        creciendo como institución fortalecer nuestro rol como
-                        centro de atención de salud y desarrollar nuevas
-                        herramientas que permitan brindar un mejor servicio
-                        integral.
-                      </p>
-                      <p className="feature-card-text">
-                        Más allá de la dispensa de medicamentos, aspiramos a ser
-                        un ejemplo a seguir en lo que se refiere a cuidados de
-                        la salud, guiados por la excelencia, la ética
-                        profesional y el compromiso genuino con nuestros
-                        pacientes.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </FeatureCard>
+            <p>
+              En <em>Farmacia Fiorilli JR</em> creemos en un modelo de farmacia
+              centrado en las personas. Nuestra principal especialidad es la
+              elaboración de preparados magistrales, lo que nos permite ofrecer
+              soluciones personalizadas, adaptadas a las necesidades específicas
+              de cada paciente, con precios accesibles y económicos.
+            </p>
+
+            <div className="philosophy-values">
+              <div>
+                <span className="material-symbols-outlined">verified</span>
+                <p>
+                  <strong>La calidad</strong> en cada uno de nuestros productos
+                  y servicios brindados.
+                </p>
+              </div>
+
+              <div>
+                <span className="material-symbols-outlined">verified</span>
+                <p>
+                  <strong>El compromiso</strong> con la salud pública y el
+                  bienestar de nuestros pacientes.
+                </p>
+              </div>
+
+              <div>
+                <span className="material-symbols-outlined">verified</span>
+                <p>
+                  <strong>La honestidad, el respeto y la amabilidad</strong> en
+                  el trato diario con quienes nos eligen.
+                </p>
+              </div>
+
+              <div>
+                <span className="material-symbols-outlined">verified</span>
+                <p>
+                  <strong>La vocación de servicio</strong>, ayudando siempre de
+                  la mejor forma posible, con cercanía y responsabilidad.
+                </p>
+              </div>
             </div>
 
-            <div className="history-large">
-              <FeatureCard
-                title="Filosofia"
-                variant="light"
-                className="history-card"
-              >
-                <span className="material-symbols-outlined history-watermark">
-                  history_edu
-                </span>
-                <div className="d-flex flex-column flex-md-row justify-content-center align-items-center">
-                  <div>
-                    <p className="feature-card-text">
-                      En <em>Farmacia Fiorilli JR</em> creemos en un modelo de
-                      farmacia centrado en las personas. Nuestra principal
-                      especialidad es la elaboración de preparados magistrales,
-                      lo que nos permite ofrecer soluciones personalizadas,
-                      adaptadas a las necesidades específicas de cada paciente ,
-                      con precios accesibles y económicos . Trabajamos con
-                      mejores estándares de calidad y seguridad, utilizando
-                      materias primas certificadas, procesos controlados y
-                      verificados y con tecnología actualizada.
-                    </p>
-                    <ul>
-                      <li style={{ listStyle: "none" }}>
-                        <span>✅</span> La <b>calidad</b> en cada uno de
-                        nuestros productos y servicios brindados .
-                      </li>
-                      <li style={{ listStyle: "none" }}>
-                        <span>✅</span> El{" "}
-                        <b>compromiso con la salud pública</b> y el bienestar de
-                        nuestros pacientes.
-                      </li>
-                      <li style={{ listStyle: "none" }}>
-                        <span>✅</span> La{" "}
-                        <b>honestidad, el respeto y la amabilidad</b> en el
-                        trato diario con quienes nos eligen.
-                      </li>
-                      <li style={{ listStyle: "none" }}>
-                        <span>✅</span> La <b>vocación de servicio</b>, ayudando
-                        siempre de la mejor forma posible, con cercanía y
-                        responsabilidad.
-                      </li>
-                    </ul>
-                    <br />
-                    <p className="feature-card-text">
-                      Siempre buscamos seguir evolucionado y mejorando a medida
-                      que pasa el tiempo , manteniéndonos siempre actualizados
-                      en todos los temas relacionados con la salud y el
-                      bienestar ,manteniendo siempre una formación continua y
-                      fortaleciendo cada aspecto posible dentro de nuestra
-                      farmacia . Buscando no solo mejor nuestros servicios y
-                      atención al publico , sino también contribuir de forma
-                      activa con el desarrollo y bienestar del publico y de los
-                      futuros farmacéuticos.{" "}
-                    </p>
-                    <p className="feature-card-text">
-                      Como farmacia escuela, también nos comprometemos con la
-                      formación de las nuevas generaciones de profesionales,
-                      compartiendo nuestro conocimiento y experiencia con
-                      quienes están dando sus primeros pasos en el mundo laboral
-                      .
-                    </p>
-                    <p className="feature-card-text">
-                      En definitiva, <em>Farmacia Fiorilli JR</em> es más que un
-                      lugar donde adquirir medicamentos: es un espacio de
-                      confianza, cuidado y compromiso, donde cada persona es
-                      atendida con dedicación, conocimiento y calidez,
-                      accediendo a productos de calidad y servicios de
-                      excelencia, siempre a precios económicos.
-                    </p>
-                  </div>
-                </div>
-              </FeatureCard>
-            </div>
+            <p>
+              Como farmacia escuela, también nos comprometemos con la formación
+              de las nuevas generaciones de profesionales, compartiendo nuestro
+              conocimiento y experiencia con quienes están dando sus primeros
+              pasos en el mundo laboral.
+            </p>
+          </div>
+
+          <div className="philosophy-image">
+            <img
+              src={vacunacion}  
+              alt="Laboratorio farmacéutico"
+            />
           </div>
         </div>
-      </section>
+      </div>
+    </section>
       {/*
 
       <section className="team-section">

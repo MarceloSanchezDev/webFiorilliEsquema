@@ -312,7 +312,247 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.about-history-section {
+  padding: 80px 0;
+  background: #f7faf3;
+}
 
+.about-history-header {
+  max-width: 760px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.section-kicker {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: var(--primerColor);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+}
+
+.about-history-header h2 {
+  margin-bottom: 14px;
+  color: var(--primerColor);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+}
+
+.about-history-header p {
+  color: var(--colorTexto);
+  line-height: 1.7;
+}
+
+.history-accordion {
+  margin-bottom: 32px;
+  background: #ffffff;
+  border: 1px solid rgba(27, 112, 74, 0.14);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(27, 112, 74, 0.08);
+}
+
+.history-accordion-button {
+  width: 100%;
+  padding: 24px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  border: none;
+  background: #ffffff;
+  cursor: pointer;
+  text-align: left;
+}
+
+.history-accordion-button:hover {
+  background: #f2f8ee;
+}
+
+.history-accordion-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.history-accordion-title .material-symbols-outlined {
+  color: var(--primerColor);
+  font-size: 2rem;
+}
+
+.history-accordion-title h3 {
+  margin: 0;
+  color: var(--primerColor);
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.history-arrow {
+  color: var(--primerColor);
+  transition: transform 0.3s ease;
+}
+
+.history-accordion-button.active .history-arrow {
+  transform: rotate(180deg);
+}
+
+.history-accordion-content {
+  padding: 28px;
+  border-top: 1px solid rgba(27, 112, 74, 0.12);
+  color: var(--colorTexto);
+  line-height: 1.8;
+}
+
+.history-accordion-content p {
+  margin-bottom: 18px;
+}
+
+.history-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.mission-list {
+  display: grid;
+  gap: 12px;
+  padding: 0;
+  margin: 20px 0 0;
+  list-style: none;
+}
+
+.mission-list li {
+  position: relative;
+  padding-left: 30px;
+  color: var(--colorTexto);
+  line-height: 1.6;
+}
+
+.mission-list li::before {
+  content: "check_circle";
+  position: absolute;
+  left: 0;
+  top: 1px;
+  font-family: "Material Symbols Outlined";
+  color: var(--primerColor);
+  font-size: 1.1rem;
+  font-variation-settings: "FILL" 1;
+}
+
+.commitment-content {
+  display: grid;
+  gap: 14px;
+}
+
+.philosophy-card {
+  padding: 36px;
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  gap: 32px;
+  align-items: center;
+  background: rgba(27, 112, 74, 0.06);
+  border-left: 5px solid var(--primerColor);
+  border-radius: 24px;
+}
+
+.philosophy-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+  color: var(--primerColor);
+}
+
+.philosophy-title h3 {
+  margin: 0;
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+
+.philosophy-title .material-symbols-outlined {
+  font-size: 2rem;
+}
+
+.philosophy-content p {
+  color: var(--colorTexto);
+  line-height: 1.75;
+}
+
+.philosophy-values {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin: 26px 0;
+}
+
+.philosophy-values div {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.philosophy-values span {
+  color: var(--primerColor);
+  font-variation-settings: "FILL" 1;
+}
+
+.philosophy-values p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.philosophy-values strong {
+  color: var(--primerColor);
+}
+
+.philosophy-image img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 22px;
+  border: 1px solid rgba(27, 112, 74, 0.16);
+  box-shadow: 0 18px 40px rgba(27, 112, 74, 0.12);
+}
+
+@media (max-width: 992px) {
+  .history-card-grid,
+  .philosophy-card {
+    grid-template-columns: 1fr;
+  }
+
+  .philosophy-image img {
+    height: 260px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-history-section {
+    padding: 56px 0;
+  }
+
+  .history-accordion-button {
+    padding: 20px;
+  }
+
+  .history-accordion-title h3 {
+    font-size: 1.25rem;
+  }
+
+  .history-accordion-content {
+    padding: 20px;
+  }
+
+  .philosophy-card {
+    padding: 24px;
+  }
+
+  .philosophy-values {
+    grid-template-columns: 1fr;
+  }
+}
 @media (max-width: 768px) {
   .about-hero-section,
   .about-history-section,
