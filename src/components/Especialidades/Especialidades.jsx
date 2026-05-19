@@ -246,17 +246,7 @@ export default function Especialidades() {
               </li>
               <li>Flexibilidad en el tratamiento.</li>
             </ul>
-            <p className="hero-description">
-              Los tratamientos se caracterizan por la participación
-              multidisciplinaria entre médico, farmacéutico y paciente, esta
-              interacción se basa en la necesidad y derecho del paciente a una
-              atención sanitaria particular, pues muchos de ellos son
-              considerados «casos únicos». Es importante resaltar que este tipo
-              de medicamentos se preparan con ingredientes farmacéuticos activos
-              de calidad certificada, siguiendo las normas de correcta
-              elaboración y control de calidad establecidas al efecto y según
-              las directrices de la legislación vigente.
-            </p>
+            
           </div>
         </div>
       </section>
