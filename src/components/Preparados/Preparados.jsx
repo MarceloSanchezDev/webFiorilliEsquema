@@ -58,7 +58,7 @@ export default function Preparados({ products }) {
       top: 0,
       behavior: "smooth",
     });
-  }, []);
+  }, [categories]);
   return (
     <main className="preparados-main">
       <section className="preparados-hero-section">
