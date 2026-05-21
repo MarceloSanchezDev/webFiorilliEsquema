@@ -6,7 +6,7 @@ import suplementos from "../../assets/suplementos.jpg";
 import menopausia from "../../assets/menopausia.jpg";
 import fertilidad from "../../assets/fertilidad.jpg";
 
-import imgEspecialidades from "../../assets/especialidades.jpg";
+import imgEspecialidades from "../../assets/especialidades.png";
 import "./Especialidades.css";
 import { useEffect } from "react";
 /*
