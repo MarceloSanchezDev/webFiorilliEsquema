@@ -81,7 +81,6 @@ export default function Product({ products }) {
       </main>
     );
   }
-  console.log(`/videos/${slug}.mp4`);
   return (
     <main className="product-main">
       <div className="flex flex-col flex-md-row width-100">

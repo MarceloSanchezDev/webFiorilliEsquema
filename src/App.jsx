@@ -574,7 +574,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
       "Contribuye a la fijación de calcio en huesos y ayuda a regular la presión arterial.",
     ],
     receta: false,
-    video: true,
+    video: false,
   },
   {
     categoria: "Suplementos",
