@@ -937,7 +937,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
   },
   {
     categoria: "Productos de origen natural",
-    nombre: "Gotas hepáticas",
+    nombre: "Gotas Hepáticas",
     img: ["1.jpg", "2.jpg", "3.jpg"],
     compo:
       "Rp/ ext. fluido BOLDO 2%  ext fluido Zanahoria 1 % ;Tint  CARQUEJA 20% Tint   ALCACHOFA 40%  gotas csp 60 ml ( USO INTERNO)",
@@ -1192,7 +1192,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
   },
   {
     categoria: "Suplementos",
-    nombre: "Cápsulas cúrcuma y pimienta negra",
+    nombre: "Cápsulas Cúrcuma y Pimienta Negra",
     img: ["1.jpg", "2.jpg", "3.jpg"],
     compo:
       "Extracto seco de Curcuma 500 mg  y extracto seco de Pimienta 50 mg ; excipientes  csp 50 capsulas ",

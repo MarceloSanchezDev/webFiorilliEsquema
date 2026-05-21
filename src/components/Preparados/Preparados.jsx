@@ -41,7 +41,7 @@ export default function Preparados({ products }) {
   const [categories, setCategories] = useState([
     { label: "Todos", active: true },
     { label: "Skin Care", active: false },
-    { label: "Medicamentos de uso topico", active: false },
+    { label: "Medicamentos de uso tópico", active: false },
     { label: "Productos de origen natural", active: false },
     { label: "Suplementos", active: false },
   ]);
