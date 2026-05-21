@@ -53,12 +53,17 @@ flex-direction: column !important;
   .recommendations-aside-sticky {
     padding: 1.2rem;
   }
+  .recommendation-aside-card{
+  flex: 0 0 auto;
+  width: 80%;
+  max-width: 200px;
+}
 }
 
 /* ========================= */
 /* 📱 MOBILE */
 /* ========================= */
-@media (max-width: 768px) {
+@media (max-width: 425px) {
   .recommendations-aside {
     max-width: 100%;
     margin-top: 2rem;
